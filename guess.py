@@ -1,20 +1,16 @@
-# Correct answer
-top_pl_player = "haaland"
-# Max chances
-max_tries = 9
+# Initialize 'guess' and 'tries' to use as variables inside the while loop
+guess = 0
+tries = 0
 
-while True:
-    # Ask user for answer
-    user_input = input("Who is the top Premiere League player this season? ")
-    if user_input != top_pl_player:
-        print("Incorrect!")
-        max_tries -= 1
-        print(str(max_tries) + " tries remaining!")
+# While loop with a max of 5 tries
+while guess != 6 and tries < 5:
+  # Ask user to guess the number
+  guess = int(input('Guess the number:  '))
+  # Add 1 to tries if user guessed incorrectly (fails to exit loop)
+  tries += 1
 
-        if max_tries == 0:
-            print("GAME OVER!")
-            break
-        
-    else:
-        print("Correct! It's Man City's Erling Haaland, #9!")
-        break
+# Display messages when condition becomes false
+if guess != 6:
+  print('You ran out of tries.')
+else:
+  print('You got it!')
