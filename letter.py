@@ -1,5 +1,0 @@
-print('8/2/23')
-print('I am feeling Python hungry!')
-print('I want to master the fundamentals of Python!')
-print('Hey we did it, I knew we could!')
-print('✨✌🏼')
