@@ -22,3 +22,12 @@ bmi = mass / height ** 2
 # Print BMI
 print(bmi)
 ```
+
+- You can also use exponential values as follows:
+
+```python
+# User height
+height = 5.6
+height = height * height
+```
+
