@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginsie's Grill</title>
+    <!-- Styling -->
+    <style>
+        /* Important */
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            position: relative;
+        }
+
+        img {
+            display: block;
+            border-radius: 16px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        h2 {
+            font-weight: 600;
+            color: #FF391E;
+            margin-bottom: 32px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px 40px;
+        }
+
+        .btn {
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 10px;
+            background-color: transparent;
+        }
+
+        /* Flex */
+        .flex {
+            display: flex;
+        }
+
+        .flex-d-col {
+            flex-direction: column;
+        }
+
+        .flex-d-row {
+            flex-direction: row;
+        }
+
+        .flex-center {
+            display: flex;
+            align-items: center;
+        }
+
+        .flex-center-between {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .flex-justify-start {
+            justify-content: start;
+        }
+
+        .flex-gap-auto {
+            gap: auto;
+        }
+
+        .flex-gap-8 {
+            gap: 8px;
+        }
+
+        .flex-gap-16 {
+            gap: 16px;
+        }
+
+        .flex-gap-24 {
+            gap: 24px;
+        }
+
+        .flex-gap-32 {
+            gap: 32px;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        /* Header */
+
+        header {
+            position: sticky;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(24px);
+        }
+
+        header h1 {
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 600;
+            color: #000;
+            text-transform: uppercase;
+        }
+
+        #header-img {
+            width: 40px;
+        }
+
+        header nav ul li a {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #000;
+            cursor: pointer;
+        }
+
+        header .btn {
+            border-bottom: solid rgba(0, 0, 0, 0.25) 4px;
+            transition: all .2s ease-in-out;
+        }
+
+        header .btn:hover {
+            border-bottom-color: #FF391E;
+            color: #FF391E;
+        }
+
+        header .btn.active {
+            border-bottom-color: #FF391E;
+        }
+
+        /* Hero section */
+        section.hero {
+            position: relative;
+        }
+
+        section.hero img {
+            width: 100%;
+        }
+
+        /* Menu section */
+
+        #menu .article-wrapper article {
+            width: 32%;
+        }
+
+        #menu .article-wrapper article img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        #menu .article-wrapper article p {
+            line-height: 24px;
+        }
+
+        /* Form section */
+        section#order-form .wrapper {
+            background-color: rgba(0, 0, 0, 0.075);
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        section#order-form input[type="number"] {
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            width: 32px;
+            height: 16px;
+            padding: 8px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        section#order-form fieldset {
+            padding: 16px;
+            border: 2px solid #FF391E;
+        }
+
+        section#order-form fieldset input[type="checkbox"] {
+            margin-right: 8px;
+            width: 16px;
+            height: 16px;
+        }
+
+        section#order-form textarea {
+            border: none;
+            padding: 16px;
+            border-radius: 16px;
+        }
+
+        section#order-form textarea:focus {
+            outline-color: #FF391E;
+        }
+
+        section#order-form input[type="submit"] {
+            border: none;
+            outline: none;
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto;
+            padding: 14px 16px;
+            border-radius: 8px;
+            background-color: #FF391E;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+
+        section#order-form input[type="submit"]:hover {
+            background-color: #ff4b34;
+        }
+
+        section#order-form input[type="submit"]:active {
+            background-color: #df341d;
+        }
+
+        /* Footer section */
+        footer p {
+            text-align: center;
+        }
+
+        footer p a {
+            font-size: 14px;
+            color: #FF391E;
+        }
+
+        /* Responsivess | Media queries */
+        @media (max-width: 900px) {
+
+            /* Menu */
+            #menu .article-wrapper article {
+                width: 100%;
+            }
+
+            #menu .article-wrapper {
+                flex-direction: column;
+                gap: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body id="home">
+    <header>
+        <div class="container">
+            <div class="flex-center-between">
+                <div class="header-content flex-center flex-gap-8">
+                    <img src="grill.svg" alt="Restaurant Header Logo" id="header-img">
+                    <h1 class="flex flex-d-col flex-justify-start">
+                        <span>Beingsie's</span>
+                        <span>Grill</span>
+                    </h1>
+                </div>
+                <nav>
+                    <ul class="flex-center flex-gap-8">
+                        <li><a class="btn active" href="#home">Home</a></li>
+                        <li><a class="btn" href="#menu">Menu</a></li>
+                        <li><a class="btn" href="#order-form">Order Now</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <img src="hero_bg.jpg" alt="Beingsie's Grill">
+            </div>
+        </section>
+        <section id="menu">
+            <div class="container">
+                <h2>🧑‍🍳 Menu</h2>
+                <div class="flex flex-d-col flex-gap-32">
+                    <div class="article-wrapper flex-center-between flex-gap-auto">
+                        <article class="flex flex-d-col flex-gap-16">
+                            <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Dish 1">
+                            <div class="flex-center-between">
+                                <h3>🍝 Special Pasta</h3>
+                                <h4>$12.99</h4>
+                            </div>
+                            <p>Delicious pasta with a special homemade sauce. Served with garlic bread.</p>
+                        </article>
+                        <article class="flex flex-d-col flex-gap-16">
+                            <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Dish 2">
+                            <div class="flex-center-between">
+                                <h3>🍣 Grilled Salmon</h3>
+                                <h4>$16.99</h4>
+                            </div>
+                            <p>Freshly grilled salmon seasoned to perfection. Served with steamed vegetables.</p>
+                        </article>
+                        <article class="flex flex-d-col flex-gap-16">
+                            <img src="https://images.unsplash.com/photo-1484980972926-edee96e0960d?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Dish 3">
+                            <div class="flex-center-between">
+                                <h3>🥗 Vegetarian Delight</h3>
+                                <h4>$10.99</h4>
+                            </div>
+                            <p>Colorful and nutritious vegetarian dish. Includes a variety of fresh vegetables.</p>
+                        </article>
+                    </div>
+                    <div class="article-wrapper flex-center-between flex-gap-auto">
+                        <article class="flex flex-d-col flex-gap-16">
+                            <img src="https://images.unsplash.com/photo-1593854989775-ae5e4d9e49e9?q=80&w=2800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Dish 1">
+                            <div class="flex-center-between">
+                                <h3>🦀 Crab & Mushroom</h3>
+                                <h4>$16.99</h4>
+                            </div>
+                            <p>A delightful blend of succulent crab and earthy mushrooms served to perfection.</p>
+                        </article>
+                        <article class="flex flex-d-col flex-gap-16">
+                            <img src="https://images.unsplash.com/photo-1628280738974-24e582b9904a?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Dish 2">
+                            <div class="flex-center-between">
+                                <h3>🥓 Carpaccio Soup</h3>
+                                <h4>$13.99</h4>
+                            </div>
+                            <p>Delight in the exquisite taste of Carpaccio Soup, a savory fusion marrying thinly sliced
+                                beef.</p>
+                        </article>
+                        <article class="flex flex-d-col flex-gap-16">
+                            <img src="https://plus.unsplash.com/premium_photo-1694977744397-0069bdc147f5?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Dish 3">
+                            <div class="flex-center-between">
+                                <h3>🐟 Fish & Rice</h3>
+                                <h4>$15.99</h4>
+                            </div>
+                            <p>Tenderly cooked fish atop aromatic rice, a culinary masterpiece that delights the palate
+                                with every bite.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="order-form">
+            <div class="container">
+                <div class="wrapper flex flex-d-col">
+                    <h2>🛒 Place Your Order</h2>
+                    <form class="flex flex-d-col flex-gap-32" action="checkout.php" method="post">
+                        <div class="flex flex-center flex-d-row flex-gap-24 flex-wrap">
+                            <div>
+                                <label for="pasta">🍝 Special Pasta</label>
+                                <input type="number" id="pasta" name="pasta" min="0" placeholder="0">
+                            </div>
+                            <div>
+                                <label for="salmon">🍣 Grilled Salmon</label>
+                                <input type="number" id="salmon" name="salmon" min="0" placeholder="0">
+                            </div>
+                            <div>
+                                <label for="vegetarian">🥗 Vegetarian Delight</label>
+                                <input type="number" id="vegetarian" name="vegetarian" min="0" placeholder="0">
+                            </div>
+                            <div>
+                                <label for="crab">🦀 Crab & Mushroom</label>
+                                <input type="number" id="crab" name="crab" min="0" placeholder="0">
+                            </div>
+                            <div>
+                                <label for="carpaccio">🥓 Carpaccio Soup</label>
+                                <input type="number" id="carpaccio" name="carpaccio" min="0" placeholder="0">
+                            </div>
+                            <div>
+                                <label for="fish">🐟 Fish & Rice</label>
+                                <input type="number" id="fish" name="fish" min="0" placeholder="0">
+                            </div>
+                        </div>
+                        <fieldset>
+                            <legend>Sides</legend>
+                            <div class="flex flex-d-row flex-gap-24">
+                                <label class="flex-center"><input type="checkbox" name="side" value="garlic-bread">🥖
+                                    Garlic Bread</label>
+                                <label class="flex-center"><input type="checkbox" name="side" value="steamed-veggies">🥗
+                                    Steamed Vegetables</label>
+                            </div>
+                        </fieldset>
+                        <div class="flex flex-d-col flex-gap-16">
+                            <label for="special-requests">🙋 Special Requests</label>
+                            <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+                        </div>
+                        <input type="submit" value="→ Go To Checkout">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Made with <span>❤️</span> by <a href="https://www.codedex.io/@Beingsie" target="_blank">@Beingsie</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
