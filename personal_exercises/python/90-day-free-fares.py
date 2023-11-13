@@ -4,36 +4,36 @@
 import random
 
 # Confirm if user has already enrolled before
-enrolled = input("Have you enrolled before? (Y/N): ")
+membership_status = input("Have you enrolled before? (Y/N): ")
 
 # Initialize membership status
 active_membership = 0
 
 if (
-    enrolled == "y"
-    or enrolled == "Y"
-    or enrolled == "yes"
-    or enrolled == "YES"
-    or enrolled == "Yes"
-    or enrolled == "yEs"
-    or enrolled == "yeS"
+    membership_status == "y"
+    or membership_status == "Y"
+    or membership_status == "yes"
+    or membership_status == "YES"
+    or membership_status == "Yes"
+    or membership_status == "yEs"
+    or membership_status == "yeS"
 ):
     active_membership = True
     print(
         "Unfortunately you don't qualify for the 90 Day Free Fares as you're currently already an active customer. You can still qualify for the 20 free monthly fares."
     )
 elif (
-    enrolled == "n"
-    or enrolled == "N"
-    or enrolled == "no"
-    or enrolled == "NO"
-    or enrolled == "No"
-    or enrolled == "nO"
+    membership_status == "n"
+    or membership_status == "N"
+    or membership_status == "no"
+    or membership_status == "NO"
+    or membership_status == "No"
+    or membership_status == "nO"
 ):
     active_membership = False
     print("Great, you qualify for the 90 Day Free Fares Program!")
 else:
-    enrolled = input("Please enter (Y/N): ")
+    membership_status = input("Please enter (Y/N): ")
 
 # Ask user for details
 first_name = input("First Name: ")
@@ -48,7 +48,6 @@ email_address = input("Email Address: ")
 birth_date = input("Birth Date: ")
 gender = input("Gender: ")
 ethnicity = input("Ethnicity: ")
-is_enrolled = 0
 
 # Create confirmation number
 confirmation_number_id_identifier = "0000-"
