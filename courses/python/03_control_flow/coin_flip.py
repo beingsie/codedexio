@@ -1,3 +1,4 @@
+# Import Random module
 import random
 
 # RNGesus will give us a random number that is either 0 or 1
