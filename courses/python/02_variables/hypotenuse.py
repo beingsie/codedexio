@@ -1,5 +1,17 @@
+# Pythagorean Theorem
+
 # Ask user for two numbers
-a = int(input('Enter a number: '))
-b = int(input('Enter another number: '))
-# More coencise version
-print((a**2 + b**2) ** 0.5)
+user_num_1 = int(input('Enter a number: '))
+user_num_2 = int(input('Enter a second number: '))
+
+# Length of a short side
+a = user_num_1 ** 2
+
+# Length of another short side
+b = user_num_2 ** 2
+
+# Length of the hypotenuse
+c = (a + b) ** 0.5
+
+# Print the hypotenuse
+print(c)
