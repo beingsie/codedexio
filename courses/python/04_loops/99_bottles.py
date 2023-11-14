@@ -1,3 +1,6 @@
-for i in range(99, 0, -1):
-  print(f"{i} bottles of beer on the wall, {i} bottles of beer")
-  print(f"Take one down and pass it around, {i - 1} bottles of beer on the wall")
+# 99 Bottles of Beer
+for x in range(99, 0, -1):
+  print(x, 'bottles of beer on the wall')
+  print(x, 'bottles of beer')
+  print('Take one down, pass it around')
+  print((x - 1), 'bottles of beer on the wall')
