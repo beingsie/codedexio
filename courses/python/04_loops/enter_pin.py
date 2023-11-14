@@ -1,9 +1,17 @@
-print('BANK OF CODÉDEX')
+# Guess Beingsie's computer password
+print('Beingsie\'s Computer')
 
-pin = int(input('Enter your PIN: '))
+# Ask user to guess password
+guessed_password = int(input('Enter password: '))
 
-while pin != 1234:
-  pin = int(input('Incorrect PIN. Enter your PIN again: '))
+# Password
+password = 123456789
 
-if pin == 1234:
-  print('PIN accepted!')
+# While loop -
+# If the guessed password is not correct
+while guessed_password != password:
+  guessed_password = int(input('Incorrect password. Please try again: '))
+
+# If the password is guessed correctly
+if guessed_password == password:
+  print('Welcome Beingsie!')
