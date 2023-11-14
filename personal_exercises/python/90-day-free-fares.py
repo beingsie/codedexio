@@ -56,10 +56,10 @@ confirmation_num = confirmation_number_id_identifier + str(confirmation_number)
 
 # Print confirmation message
 if active_membership == False:
-	print("You have successfully enrolled into the 90 Day Free Fares Program!")
-	print("Your confirmation number is", confirmation_num)
+    print("You have successfully enrolled into the 90 Day Free Fares Program!")
+    print("Your confirmation number is", confirmation_num)
 elif active_membership == True:
-	print("You have successfully enrolled into the monthly 20 Free Fares Program!")
-	print("Your confirmation number is", confirmation_num)
+    print("You have successfully enrolled into the monthly 20 Free Fares Program!")
+    print("Your confirmation number is", confirmation_num)
 else:
-	print("We're sorry, an error occured while processing your application.")
+    print("We're sorry, an error occured while processing your application.")
