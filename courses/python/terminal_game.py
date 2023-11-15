@@ -38,9 +38,11 @@ print(f'''
 ''')
 
 # Character Selection
-selected_character = input('Choose a character: ')
+selected_character = input('Choose a character: ').lower()
 
-if selected_character == 'punching baby':
-	print(f'You have selected {punching_baby}!')
+if selected_character == punching_baby.lower():
+	print(f'Woah, you selected {punching_baby}!')
+elif selected_character == possed_bear.lower():
+	print(f'Woah, you selected {possed_bear}!')
 else:
-	print(f'Please select a character first!')
+	print(f'Pssst, you didn\'t select a character. Not putting up with this, buh-BYE.')
