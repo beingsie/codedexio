@@ -28,11 +28,11 @@ print(f'Welcome to Monster Royale {player_name.capitalize()}!')
 print(f'''
 [Characters]
 
-> {possessed_bear}
+> {possessed_bear.title()}
  - HP: {possessed_bear_hp}
  - Attack Power: {possessed_bear_atk}
  
-> {punching_baby}
+> {punching_baby.title()}
  - HP {punching_baby_hp}
  - Attack Power: {punching_baby_atk}
 ''')
