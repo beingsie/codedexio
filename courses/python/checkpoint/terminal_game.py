@@ -41,7 +41,7 @@ print(f'''
 # Character Selection
 selected_character = input('Choose a character: ').lower()
 
-# Repeat asking user to select and available character
+# Loop user to select an available character if no available character is selected
 while (selected_character != punching_baby and selected_character != '1') and (selected_character != possessed_bear and selected_character != '2'):
   selected_character = input('''
   Please select an available character: ''').lower()
