@@ -34,7 +34,7 @@ print(f'''
    - Attack Power: {possessed_bear_atk}
  
   > {punching_baby.title()}
-   - HP {punching_baby_hp}
+   - HP: {punching_baby_hp}
    - Attack Power: {punching_baby_atk}
 ''')
 
