@@ -14,6 +14,9 @@ Battle vs NPC's all within your terminal! Upgrade character through `XP`, `HP` a
 	- Heal Packs
 	- Upgrades: TEMP
 
+## Expirimental
+- [ ] Add emojis to enhance game experience
+
 ## Important Changes:
 - Improved character selection input validation with numeration. [632f76f](https://github.com/beingsie/codedexio/commit/632f76f943c0c07c2ffa250061f501e367799c92)
 
