@@ -21,3 +21,4 @@ Battle vs NPC's all within your terminal! Upgrade character through `XP`, `HP` a
 **To-Do**:
 - [ ] Create logic to determine the amount of attack power generated for an attack from 'enemies'.
 	- Use similar logic from [99 Bottles](https://github.com/beingsie/codedexio/blob/main/courses/python/04_loops/99_bottles.py).
+ - Attack damage range should mirror the up to the character's max damage.
