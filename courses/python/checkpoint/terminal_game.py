@@ -1,6 +1,6 @@
 # Characters
-possessed_bear = 'Possessed Bear' # Temp name
-punching_baby = 'Punching Baby' # Temp name
+possessed_bear = 'possessed bear' # Temp name
+punching_baby = 'punching baby' # Temp name
 
 # Universal Stats
 xp = 0
