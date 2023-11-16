@@ -1,0 +1,3 @@
+*.py indent=4
+*.md indent=2
+* text eol=lf
