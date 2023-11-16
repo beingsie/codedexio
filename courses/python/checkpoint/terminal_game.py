@@ -1,3 +1,6 @@
+# Import Random Module
+import random
+
 # Characters
 possessed_bear = 'possessed bear' # Temp name
 punching_baby = 'punching baby' # Temp name
@@ -50,3 +53,20 @@ else:
 	print(f'Pssst, you didn\'t select a character. Not putting up with this, buh-BYE.')
 
 # For testing only ===================================
+
+# Attack damage randomizer per character
+hit_possessed_bear = random.randint(1, possessed_bear_atk)
+hit_punching_baby = random.randint(1, punching_baby_atk)
+
+# Apply attack damage to character's HP
+update_possessed_bear_hp = possessed_bear_hp - hit_possessed_bear
+update_punching_baby_hp = punching_baby_hp - hit_punching_baby
+
+# Outcome per character
+# Possessed Bear
+print(f'''{possessed_bear.title()} has been hit with {hit_possessed_bear} attack points!''')
+print(f'''HP: {update_possessed_bear_hp}/{possessed_bear_hp}''')
+print('') # Empty string line
+# Punching Baby
+print(f'''{punching_baby.title()} has been hit with {hit_punching_baby} attack points!''')
+print(f'''HP: {update_punching_baby_hp}/{punching_baby_hp}''')
