@@ -40,9 +40,13 @@ print(f'''
 # Character Selection
 selected_character = input('Choose a character: ').lower()
 
-if selected_character == punching_baby.lower():
+# Repeat asking user to select and available character
+while (selected_character != punching_baby and selected_character != '1') and (selected_character != possessed_bear and selected_character != '2'):
+  selected_character = input('Please select an available character: ').lower()
+
+if selected_character == punching_baby.lower() or selected_character == '1':
 	print(f'Woah, you selected {punching_baby}!')
-elif selected_character == possessed_bear.lower():
+elif selected_character == possessed_bear.lower() or selected_character == '2':
 	print(f'Woah, you selected {possessed_bear}!')
 else:
 	print(f'Pssst, you didn\'t select a character. Not putting up with this, buh-BYE.')
