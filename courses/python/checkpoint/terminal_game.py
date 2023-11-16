@@ -73,11 +73,11 @@ update_punching_baby_hp = punching_baby_hp - hit_punching_baby
 # Possessed Bear
 print(f'''{possessed_bear.title()} has been hit with {hit_possessed_bear} attack points!
 ''')
-print(f'''HP: {update_possessed_bear_hp}/{possessed_bear_hp}
+print(f'''	HP: {update_possessed_bear_hp}/{possessed_bear_hp}
 ''')
 
 # Punching Baby
 print(f'''{punching_baby.title()} has been hit with {hit_punching_baby} attack points!
 ''')
-print(f'''HP: {update_punching_baby_hp}/{punching_baby_hp}
+print(f'''  HP: {update_punching_baby_hp}/{punching_baby_hp}
 ''')
