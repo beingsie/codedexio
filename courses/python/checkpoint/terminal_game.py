@@ -14,8 +14,6 @@ possessed_bear_atk = 3
 punching_baby_hp = 90
 punching_baby_atk = 15
 
-# For testing only ===================================
-
 # Player name
 player_name = input('Enter your player name: ')
 print('')
@@ -50,3 +48,5 @@ elif selected_character == possessed_bear.lower() or selected_character == '2':
 	print(f'Woah, you selected {possessed_bear}!')
 else:
 	print(f'Pssst, you didn\'t select a character. Not putting up with this, buh-BYE.')
+
+# For testing only ===================================
