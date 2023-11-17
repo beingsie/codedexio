@@ -53,17 +53,9 @@ while (selected_character != punching_baby and selected_character != "1") and (
     ).lower()
 
 if selected_character == punching_baby.lower() or selected_character == "1":
-    print(
-        f"""
-  Woah, you selected {punching_baby.title()}!
-  """
-    )
+    selected_character = punching_baby
 elif selected_character == possessed_bear.lower() or selected_character == "2":
-    print(
-        f"""
-  Woah, you selected {possessed_bear.title()}!
-  """
-    )
+    selected_character = possessed_bear
 else:
     print(
         f"""
@@ -78,29 +70,10 @@ hit_possessed_bear = random.randint(1, possessed_bear_atk)
 hit_punching_baby = random.randint(1, punching_baby_atk)
 
 # Apply attack damage to character's HP
-update_possessed_bear_hp = possessed_bear_hp - hit_possessed_bear
-update_punching_baby_hp = punching_baby_hp - hit_punching_baby
-
-# Outcome per character
-# Possessed Bear
-print(
-    f"""{possessed_bear.title()} has been hit with {hit_possessed_bear} attack points!
-"""
-)
-print(
-    f"""  HP: {update_possessed_bear_hp}/{possessed_bear_hp}
-"""
-)
-
-# Punching Baby
-print(
-    f"""{punching_baby.title()} has been hit with {hit_punching_baby} attack points!
-"""
-)
-print(
-    f"""  HP: {update_punching_baby_hp}/{punching_baby_hp}
-"""
-)
+if selected_character == punching_baby:
+    update_punching_baby_hp = punching_baby_hp - hit_punching_baby
+elif selected_character == possessed_bear:
+    update_possessed_bear_hp = possessed_bear_hp - hit_possessed_bear
 
 # Counter Attack - Player
 # Message for player
