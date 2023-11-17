@@ -30,13 +30,13 @@ print(
     f"""
 [Characters]
 
-  > {possessed_bear.title()}
-   - HP: {possessed_bear_hp}
-   - Attack Power: {possessed_bear_atk}
-
-  > {punching_baby.title()}
+  > 1. {punching_baby.title()}
    - HP: {punching_baby_hp}
    - Attack Power: {punching_baby_atk}
+
+  > 2. {possessed_bear.title()}
+   - HP: {possessed_bear_hp}
+   - Attack Power: {possessed_bear_atk}
 """
 )
 
