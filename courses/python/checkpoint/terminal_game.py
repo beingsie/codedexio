@@ -81,3 +81,15 @@ print(f'''{punching_baby.title()} has been hit with {hit_punching_baby} attack p
 ''')
 print(f'''  HP: {update_punching_baby_hp}/{punching_baby_hp}
 ''')
+
+# Counter Attack - Player
+# Message for player
+print(f'''Time for a counter attack {player_name.title()}!''')
+
+# Attacking options
+print(f'''
+  {player_name.title()} select your next move!
+
+  > 1. Attack
+  > 2. Run Away
+''')
