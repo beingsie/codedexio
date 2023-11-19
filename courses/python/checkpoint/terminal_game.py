@@ -75,3 +75,15 @@ print(f"Time for a counter attack {player_name.title()}!")
 print(f"{player_name.title()} select your next move!")
 print("> 1. Attack")
 print("> 2. Run Away")
+
+next_move = input(f"Please select your next move: ").lower()
+
+while (next_move != "1" and next_move != "attack") and (next_move != "2" and next_move != "run away"):
+	next_move = input("Please select a next move: ").lower()
+
+if next_move == "1" or next_move == "attack":
+	# REPLACE WITH ATK GEN
+	print("TEMP1")
+elif next_move == "2" or next_move == "run away":
+	# REPLACE WITH POINT DEDUCT GEN
+	print("TEMP2")
