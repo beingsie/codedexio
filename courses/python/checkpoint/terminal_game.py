@@ -52,6 +52,9 @@ else:
 
 # For testing only ===================================
 
+# Simulated attack to player
+print(f"SIMULATING ATTACK TO {player_name.capitalize()}!")
+
 # Attack damage randomizer per character
 hit_possessed_bear = random.randint(1, possessed_bear_atk)
 hit_punching_baby = random.randint(1, punching_baby_atk)
