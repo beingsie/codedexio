@@ -13,7 +13,13 @@ Battle vs NPC's all within your terminal! Upgrade character through levling up y
 ### ⚔ [Battle]
 
 ## 🧪 Experimental
-**To-Do**:
+- [ ] Selection Mode
+	- Give player ability to select type of character selection mode: `dice roll` or `manual`. 
+- [ ] Selection logic based on the `random` module function `randint`.
+	- [ ] Dice roll
+		- [ ] Give player has 3 dice rolls.
+		- [ ] Countdown (5 seconds)
+    	- **auto selects** character if player fails to select after using all available dice rolls.
 - [ ] Text-based UI
 - [ ] Add emojis to enhance game experience
 - [ ] Shop
