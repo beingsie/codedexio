@@ -85,8 +85,20 @@ while (next_move != "1" and next_move != "attack") and (next_move != "2" and nex
 	next_move = input("Please select a next move: ").lower()
 
 if next_move == "1" or next_move == "attack":
-	# REPLACE WITH ATK GEN
-	print("TEMP1")
+	if selected_character == punching_baby:
+		update_possessed_bear_hp = possessed_bear_hp - hit_punching_baby
+		print(f"{punching_baby.title()} attacks {possessed_bear.title()} for {hit_punching_baby} attack points!")
+		print(f"{possessed_bear.title()} HP: {update_possessed_bear_hp}/{possessed_bear_hp}")
+	elif selected_character == possessed_bear:
+		update_punching_baby_hp = punching_baby_hp - hit_possessed_bear
+		print(f"{possessed_bear.title()} attacks {punching_baby.title()} for {hit_possessed_bear} attack points!")
+		print(f"{punching_baby.title()} HP: {update_punching_baby_hp}/{punching_baby_hp}")
 elif next_move == "2" or next_move == "run away":
-	# REPLACE WITH POINT DEDUCT GEN
-	print("TEMP2")
+	if selected_character == punching_baby:
+		xp = xp - 7
+		print(f"{punching_baby.title()} ran away from {possessed_bear.title()}! {player_name.title()} has been deducted {xp}XP for this action!")
+		print(f"{player_name.title()}'s XP: {xp}")
+	elif selected_character == possessed_bear:
+		xp = xp - 7
+		print(f"{possessed_bear.title()} ran away from {punching_baby.title()}! {player_name.title()} has been deducted {xp}XP for this action!")
+		print(f"{player_name.title()}'s XP: {xp}")
