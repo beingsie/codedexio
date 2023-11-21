@@ -3,8 +3,8 @@ Battle vs NPC's all within your terminal! Upgrade character through levling up y
 
 ## In Progress
 - Battle
-	- [ ] Offensive Attacking
-	- [ ] Counter Attacking
+	- [x] Offensive Attacking
+	- [x] Counter Attacking
  	- [ ] `Run Away` - Loses 1/4 of their `XP`.
 
 ## Expirimental
