@@ -5,9 +5,10 @@ Battle vs NPC's all within your terminal! Upgrade character through levling up y
 - Battle
 	- [ ] Offensive Attacking
 	- [ ] Counter Attacking
+ 	- [ ] `Run Away` - Loses 1/4 of their `XP`.
+
 ## Expirimental
 **To-Do**:
-- [ ] `Run Away` - Loses 1/4 of their `XP`.
 - [ ] Add emojis to enhance game experience
 - [ ] Shop
   - User can spend XP for the following items:
@@ -22,7 +23,7 @@ Battle vs NPC's all within your terminal! Upgrade character through levling up y
 
 ## Battle
 **To-Do**:
-- [ ] Create logic to determine the amount of attack power generated for an attack from 'enemies'.
+- [x] Create logic to determine the amount of attack power generated for an attack from 'enemies'.
 	- Use similar logic from [99 Bottles](https://github.com/beingsie/codedexio/blob/main/courses/python/04_loops/99_bottles.py).
  - Attack damage range should mirror the up to the character's max damage.
 
