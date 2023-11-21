@@ -49,11 +49,11 @@ while (selected_character != punching_baby and selected_character != "1") and (s
 
 if selected_character == punching_baby.lower() or selected_character == "1":
     selected_character = punching_baby
-    print(f"Woah, you selected {punching_baby.title()}!")
+    print(f"{player_name.title()} selected {punching_baby.title()}!")
 	print("") # Empty string line - UI
 elif selected_character == possessed_bear.lower() or selected_character == "2":
     selected_character = possessed_bear
-    print(f"Woah, you selected {possessed_bear.title()}!")
+    print(f"{player_name.title()} selected {possessed_bear.title()}!")
 	print("") # Empty string line - UI
 else:
     print(f"Pssst, you didn't select a character. Not putting up with this, buh-BYE.")
