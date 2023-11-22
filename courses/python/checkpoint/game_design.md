@@ -1,9 +1,11 @@
 # 👨‍💻 Terminal Mini Game
-Battle vs NPC's all within your terminal! Upgrade character through levling up your `XP`, `HP` and `Attack Power`.
+Battle vs NPC's all within your terminal! Upgrade character through leveling up your `XP`, `HP` and `Attack Power`.
 
 ## ⚡ In Progress
 ### [Battle]
 - [ ] `Run Away` - Loses 1/4 of their `XP`.
+### [Dialogue]
+- [ ] Dialogue using `randit` to pick a line that connects the characters in battle. (After selecting the `run away` option)
  
 ## 📃 To-Do:
 - [ ] Character descriptions
@@ -13,6 +15,8 @@ Battle vs NPC's all within your terminal! Upgrade character through levling up y
 ### ⚔ [Battle]
 
 ## 🧪 Experimental
+- [ ] Dialogue
+  - [ ] Back story for each character that connects them via dialogue.
 - [ ] Selection Mode
 	- Give player ability to select type of character selection mode: `dice roll` or `manual`. 
 - [ ] Selection logic based on the `random` module function `randint`.
