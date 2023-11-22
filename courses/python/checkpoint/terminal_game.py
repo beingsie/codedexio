@@ -117,11 +117,11 @@ elif next_move == "2" or next_move == "run away":
 		print("") # Empty string line - UI
 		print(f"{player_name.title()} has been deducted {xp}XP for this action!")
 		print("") # Empty string line - UI
-		print(f"{player_name.title()}'s XP: {xp}")
+		print(f"> {player_name.title()}'s XP: {xp}")
 	elif selected_character == possessed_bear:
 		xp = xp - 7
 		print(f"{possessed_bear.title()} ran away from {punching_baby.title()}!")
 		print("") # Empty string line - UI
 		print(f"{player_name.title()} has been deducted {xp}XP for this action!")
 		print("") # Empty string line - UI
-		print(f"{player_name.title()}'s XP: {xp}")
+		print(f"> {player_name.title()}'s XP: {xp}")
