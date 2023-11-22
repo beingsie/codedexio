@@ -28,6 +28,7 @@ print("") # Empty string line - UI
 # - Character Selection
 # Display list of characters
 print(f"[Characters]")
+print("") # Empty string line - UI
 print(f"> 1. {punching_baby.title()}")
 print("") # Empty string line - UI
 print(f"- HP: {punching_baby_hp}")
