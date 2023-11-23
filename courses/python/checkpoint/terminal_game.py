@@ -45,16 +45,16 @@ print("") # Empty string line - UI
 
 # Loop user to select an available character if no available character is selected
 while (selected_character != punching_baby and selected_character != "1") and (selected_character != possessed_bear and selected_character != "2"):
-    selected_character = input("Please select an available character: ").lower()
+	selected_character = input("Please select an available character: ").lower()
 	print("") # Empty string line - UI
 
 if selected_character == punching_baby.lower() or selected_character == "1":
-    selected_character = punching_baby
-    print(f"{player_name.title()} selected {punching_baby.title()}!")
+	selected_character = punching_baby
+	print(f"{player_name.title()} selected {punching_baby.title()}!")
 	print("") # Empty string line - UI
 elif selected_character == possessed_bear.lower() or selected_character == "2":
-    selected_character = possessed_bear
-    print(f"{player_name.title()} selected {possessed_bear.title()}!")
+	selected_character = possessed_bear
+	print(f"{player_name.title()} selected {possessed_bear.title()}!")
 	print("") # Empty string line - UI
 else:
     print(f"Pssst, you didn't select a character. Not putting up with this, buh-BYE.")
@@ -71,15 +71,15 @@ hit_punching_baby = random.randint(1, punching_baby_atk)
 
 # Apply attack damage to character's HP
 if selected_character == punching_baby:
-    update_punching_baby_hp = punching_baby_hp - hit_punching_baby
-    print(f"{punching_baby.title()} has been hit with {hit_punching_baby} attack points!")
-    print(f"> HP: {update_punching_baby_hp}/{punching_baby_hp}")
+	update_punching_baby_hp = punching_baby_hp - hit_punching_baby
+	print(f"{punching_baby.title()} has been hit with {hit_punching_baby} attack points!")
+	print(f"> HP: {update_punching_baby_hp}/{punching_baby_hp}")
 	print("") # Empty string line - UI
     
 elif selected_character == possessed_bear:
-    update_possessed_bear_hp = possessed_bear_hp - hit_possessed_bear
-    print(f"{possessed_bear.title()} has been hit with {hit_possessed_bear} attack points!")
-    print(f"> HP: {update_possessed_bear_hp}/{possessed_bear_hp}")
+	update_possessed_bear_hp = possessed_bear_hp - hit_possessed_bear
+	print(f"{possessed_bear.title()} has been hit with {hit_possessed_bear} attack points!")
+	print(f"> HP: {update_possessed_bear_hp}/{possessed_bear_hp}")
 	print("") # Empty string line - UI
 
 # Counter Attack - Player
