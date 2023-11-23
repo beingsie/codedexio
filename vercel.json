@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
         {
-            "src": "courses/html/final_project/",
+            "src": "courses/html/final_project",
             "use": "@vercel/static"
         }
     ]
