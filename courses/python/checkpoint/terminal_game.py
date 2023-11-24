@@ -22,7 +22,7 @@ player_name = input("Enter your player name: ")
 print("")
 
 # Welcome message
-print(f"Welcome to Randit Battle Royale {player_name.capitalize()}!")
+print(f"Welcome to Randit Royale {player_name.capitalize()}!")
 print("") # Empty string line - UI
 
 # - Character Selection
