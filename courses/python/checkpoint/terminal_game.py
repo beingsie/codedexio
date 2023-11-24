@@ -125,3 +125,4 @@ elif next_move == "2" or next_move == "run away":
 		print(f"{player_name.title()} has been deducted {xp}XP for this action!")
 		print("") # Empty string line - UI
 		print(f"> {player_name.title()}'s XP: {xp}")
+		print("") # Empty string line - UI
