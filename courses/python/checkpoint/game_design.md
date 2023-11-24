@@ -2,6 +2,8 @@
 Battle vs NPC's all within your terminal! Upgrade character through leveling up your `XP`, `HP` and `Attack Power`.
 
 ## ⚡ In Progress
+### UI
+- [ ] Text-based UI
 ### [Battle]
 - [ ] `Run Away` - Loses 1/4 of their `XP`.
 ### [Dialogue]
@@ -24,7 +26,6 @@ Battle vs NPC's all within your terminal! Upgrade character through leveling up 
 		- [ ] Give player has 3 dice rolls.
 		- [ ] Countdown (5 seconds)
     	- **auto selects** character if player fails to select after using all available dice rolls.
-- [ ] Text-based UI
 - [ ] Add emojis to enhance game experience
 - [ ] Shop
   - User can spend XP for the following items:
