@@ -27,3 +27,33 @@ else:
 		print(f"NPC_DIALOUGE_2")
 	else:
 		print(f"NPC_DIALOUGE_3")
+
+# Main menu
+# Intro
+print("""
+╔══════════════════════╗
+║   ♛ Randint Royale   ║
+╚══════════════════════╝
+  ║
+    A terminal game by @Beingsie.
+  ║""")
+input(f"    > Press Any Key To Continue ")  # Empty Input for interactivity
+print("""  ║
+╔══════════════════════╗
+║     ► Main Menu      ║
+╚══════════════════════╝
+  ║
+    > 1. Start	
+    > 2. Game Rules
+    > 3. Exit
+  ║""")
+
+active_main_menu = str(input("    > Select a menu option: ").lower())
+print("  ║")	
+
+while active_main_menu not in ("1", "2", "3") and (active_main_menu not in ("start", "game rules", "exit")):
+	active_main_menu = str(input(f"    > Select a menu option: ").lower())
+	
+if active_main_menu in ("1", "2", "3") or (active_main_menu in ("start", "game rules", "exit")):
+	print("  ║")
+	print("    > Success")
