@@ -17,13 +17,62 @@ possessed_bear_atk = 3
 punching_baby_hp = 90
 punching_baby_atk = 15
 
+# UX
+print("""╔══════════════════╗
+   REGISTER HERE
+	  """)
+
 # Player name
-player_name = input("Enter your player name: ")
+player_name = input("   > Enter A Username: ")
+
+# UX
+user_secret = input("""   > Enter A Secret: """)
 print("")
 
 # Welcome message
-print(f"Welcome to Randit Royale {player_name.capitalize()}!")
-print("") # Empty string line - UI
+print(f"""Welcome {player_name.capitalize()}, To
+  ___                 _  _       _   
+ | _ \ __ _  _ _   __| |(_) _ _ | |_ 
+ |   // _` || ' \ / _` || || ' \|  _|
+ |_|_/__,_||_||_|\__,_||_||_||_|\__|
+  ___                   _            
+ | _ \ ___  _  _  __ _ | | ___       
+ |   // _ \| || |/ _` || |/ -_)      
+ |_|_\___/ \_, |\__,_||_|\___|      
+         |__/
+    
+    > We won't spill your secret,
+	  
+      If you win of course""")
+
+# Main menu
+# Intro
+print("""
+  ║
+  ║
+  ║
+    A terminal game by @Beingsie.
+  ║""")
+input(f"    > Press Any Key To Continue ")  # Empty Input for interactivity
+print("""  ║
+╔══════════════════════╗
+║     ► Main Menu      ║
+╚══════════════════════╝
+  ║
+    > 1. Start	
+    > 2. Game Rules
+    > 3. Exit
+  ║""")
+
+active_main_menu = str(input("    > Select a menu option: ").lower())
+print("  ║")	
+
+while active_main_menu not in ("1", "2", "3") and (active_main_menu not in ("start", "game rules", "exit")):
+	active_main_menu = str(input(f"    > Select a menu option: ").lower())
+	
+if active_main_menu in ("1", "2", "3") or (active_main_menu in ("start", "game rules", "exit")):
+	print("  ║")
+	print("    > Success")
 
 # - Character Selection
 # Display list of characters
