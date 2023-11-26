@@ -4,11 +4,11 @@ from random import randint
 # XP reductions for `run away` option
 xp = 250
 
-ran_away = int(xp / 4)
-ran_away_deduction = xp - ran_away
+run_away = int(xp / 4)
+run_away_deduction = xp - run_away
 
-print(f"You lose {ran_away}XP!")
-print(f"Update: {str(ran_away_deduction)}XP")
+print(f"You lose {run_away}XP!")
+print(f"Update: {str(run_away_deduction)}XP")
 
 # Randomized character dialouge
 char_dialouge = randint(1, 3)
