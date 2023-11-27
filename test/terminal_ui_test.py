@@ -1,17 +1,24 @@
 # UX
+# print("""
+# ■■■■■■■■■■■□□□
+# """)
+
 print("""
-══ PLAYER REGISTRATION:
+░▒▓  PLAYER REGISTRATION  ▓▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 	  """)
 
 # Player name
-player_name = input("   > Enter a Username: ")
+player_name = input("     ♢ Enter a Username > ")
 
 # UX
-user_secret = input(f"""   > Enter a secret about {player_name.title()}: """)
+user_secret = input(f"""     ♢ Enter a secret about {player_name.title()} > """)
 print("")
 
+input("""     ❖  Press Any Key To Continue  ❖ """)
+
 # Welcome message
-print(rf"""    Welcome {player_name.capitalize()}, to the Amazing
+print(rf"""
+░░░▒▓  ✦ WELCOME TO ✦  ▓▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
       ____  ___    _   ______  __________
      / __ \/   |  / | / / __ \/  _/_  __/
     / /_/ / /| | /  |/ / / / // /  / /   
@@ -22,24 +29,20 @@ print(rf"""    Welcome {player_name.capitalize()}, to the Amazing
    / _, _/ /_/ / / / ___ |/ /___/ /___   
   /_/ |_|\____/ /_/_/  |_/_____/_____/   
     
-    > We won't spill your secret.
-      Unless you lose.
+     ★ Your secret is safe {player_name.title()}, unless you lose.
+
+░░░░ A terminal game by @Beingsie ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 """)
 
 # Main menu
 # Intro
-print("""  ║  A terminal game by @Beingsie  ║""")
-input("""
-
-     > Press Any Key To Continue
-   ═══════════════════════════════""")
+input("""     ❖  Press Any Key To Continue  ❖ """)
 print("""
-	╔══════════════════════╗
-	║     ► Main Menu      ║
-	╚══════════════════════╝
+╔══════════════════════╗
+║     ► Main Menu      ║
+╚══════════════════════╝
   ║
-  ║ > 1. Start	
-  ║ > 2. Game Rules
-  ║ > 3. Exit
+  ║ ♢ 1. Start	
+  ║ ♢ 2. Game Rules
+  ║ ♢ 3. Exit
   ║""")
- 
