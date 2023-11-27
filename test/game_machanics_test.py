@@ -30,13 +30,6 @@ else:
 
 # Main menu
 # Intro
-print("""
-╔══════════════════════╗
-║   ♛ Randint Royale   ║
-╚══════════════════════╝
-  ║
-    A terminal game by @Beingsie.
-  ║""")
 input(f"    > Press Any Key To Continue ")  # Empty Input for interactivity
 print("""  ║
 ╔══════════════════════╗
