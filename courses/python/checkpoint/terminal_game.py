@@ -18,57 +18,55 @@ punching_baby_hp = 90
 punching_baby_atk = 15
 
 # UX
-print("""╔══════════════════╗
-   REGISTER HERE
+print("""
+══ PLAYER REGISTRATION:
 	  """)
 
 # Player name
-player_name = input("   > Enter A Username: ")
+player_name = input("   > Enter a Username: ")
 
 # UX
-user_secret = input("""   > Enter A Secret: """)
+user_secret = input(f"""   > Enter a secret about {player_name.title()}: """)
 print("")
 
 # Welcome message
-print(f"""Welcome {player_name.capitalize()}, To
-  ___                 _  _       _   
- | _ \ __ _  _ _   __| |(_) _ _ | |_ 
- |   // _` || ' \ / _` || || ' \|  _|
- |_|_/__,_||_||_|\__,_||_||_||_|\__|
-  ___                   _            
- | _ \ ___  _  _  __ _ | | ___       
- |   // _ \| || |/ _` || |/ -_)      
- |_|_\___/ \_, |\__,_||_|\___|      
-         |__/
+print(rf"""    Welcome {player_name.capitalize()}, to the Amazing
+      ____  ___    _   ______  __________
+     / __ \/   |  / | / / __ \/  _/_  __/
+    / /_/ / /| | /  |/ / / / // /  / /   
+   / _, _/ ___ |/ /|  / /_/ _/ /  / /    
+  /_/ |_/_/ _|_/_/ |_/_____/___/ /_/_____
+     / __ \/ __ \ \/ /   |  / /   / ____/
+    / /_/ / / / /\  / /| | / /   / __/   
+   / _, _/ /_/ / / / ___ |/ /___/ /___   
+  /_/ |_|\____/ /_/_/  |_/_____/_____/   
     
-    > We won't spill your secret,
-	  
-      If you win of course""")
+    > We won't spill your secret.
+      Unless you lose.
+""")
 
 # Main menu
 # Intro
+print("""  ║  A terminal game by @Beingsie  ║""")
+input("""
+
+     > Press Any Key To Continue
+   ═══════════════════════════════""")
 print("""
+	╔══════════════════════╗
+	║     ► Main Menu      ║
+	╚══════════════════════╝
   ║
-  ║
-  ║
-    A terminal game by @Beingsie.
-  ║""")
-input(f"    > Press Any Key To Continue ")  # Empty Input for interactivity
-print("""  ║
-╔══════════════════════╗
-║     ► Main Menu      ║
-╚══════════════════════╝
-  ║
-    > 1. Start	
-    > 2. Game Rules
-    > 3. Exit
+  ║ > 1. Start	
+  ║ > 2. Game Rules
+  ║ > 3. Exit
   ║""")
 
 active_main_menu = str(input("    > Select a menu option: ").lower())
 print("  ║")	
 
 while active_main_menu not in ("1", "2", "3") and (active_main_menu not in ("start", "game rules", "exit")):
-	active_main_menu = str(input(f"    > Select a menu option: ").lower())
+	active_main_menu = str(input(f"    > Select an available menu option: ").lower())
 	
 if active_main_menu in ("1", "2", "3") or (active_main_menu in ("start", "game rules", "exit")):
 	print("  ║")
