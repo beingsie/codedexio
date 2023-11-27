@@ -3,6 +3,7 @@ Battle vs NPC's in terminal! Upgrade character through leveling up your `XP`, `H
 
 ## ⚡ In Progress
 ### UI
+- [ ] ■■■□□□ bar for `HP`. Calculate the number of empty squares to full depending on their max hp / by 10 (squares)
 - [ ] Text-based UI
 - [ ] Emojies
 ### [Battle]
