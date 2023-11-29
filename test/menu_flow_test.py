@@ -1,76 +1,55 @@
-# Main menu input trigger
-main_menu = input("""
-MAIN MENU
+# Menu's are enabled after user successfully registers
+user_is_registered = True
 
-1. Start
-2. Options
-3. Exit
+while user_is_registered:
+    print("Main Menu")
+    print("A")
+    print("B")
+    print("C")
+    # Selection input
+    selection_menu = input("Please select an option: ").lower()
 
-""").lower()
+    if selection_menu == 'a':
+        # Main menu submenu
+        while user_is_registered:
+            print("Menu A")
+            print("1")
+            print("2")
+            print("Back to main menu")
+            # Selection input
+            selection_menu = input("Please select an option: ").lower()
 
-# Main menu while loop
-while (main_menu != "1" and main_menu != "start") and (main_menu != "2" and main_menu != "options") and (main_menu != "3" and main_menu != "exit"):
-	print("Invalid option. Please try again.")
+            if selection_menu == "back":
+                # Return to main menu
+                break
 
-	# Repeat menu if input is invalid
-	main_menu = input("""
-MAIN MENU
+    elif selection_menu == 'b':
+        # Main menu submenu
+        while user_is_registered:
+            print("Menu B")
+            print("1")
+            print("2")
+            print("Back to main menu")
+            # Selection input
+            selection_menu = input("Please select an option: ").lower()
 
-1. Start
-2. Options
-3. Exit
+            if selection_menu == "back":
+                # Return to main menu
+                break
 
-""").lower()
+    elif selection_menu == 'c':
+        # Main menu submenu
+        while user_is_registered:
+            print("Menu C")
+            print("1")
+            print("2")
+            print("Back to main menu")
+            # Selection input
+            selection_menu = input("Please select an option: ").lower()
 
-# START selected
-if main_menu == "1" or main_menu == "start":
-	start_menu = input("""
-START MENU
-
-1. Character Selection
-2. Options
-3. Back to Main Menu
-
-""").lower()
-	
-	# START while loop
-	while (start_menu != "1" and start_menu != "character selection") and (start_menu != "2" and start_menu != "options") and (start_menu != "3" and start_menu != "back"):
-		print("Invalid option. Please try again.")
-		start_menu = input("""
-START MENU
-
-1. Character Selection
-2. Options
-3. Back to Main Menu
-
-""").lower()
-	if start_menu == "1" or start_menu == "character selection":
-		print("[Character selection screen]")
-		
-	elif start_menu == "2" or start_menu == "options":
-		options_menu = input("""
-OPTIONS MENU
-
-1. Option1
-2. Option2
-3. Back to Main Menu
-
-""").lower()
-		# OPTIONS while loop
-		while (options_menu != "1" and options_menu != "character selection") and (options_menu != "2" and options_menu != "options") and (options_menu != "3" and options_menu != "back"):
-			print("Invalid option. Please try again.")
-			options_menu = input("""
-	OPTIONS MENU
-	
-	1. Option1
-	2. Option2
-	3. Back to Main Menu
-	
-	""").lower()
-
-		if options_menu == "1" or options_menu == "option 1":
-			print("Option 1")
-		elif options_menu == "2" or options_menu == "option 2":
-			print("Option 2")
-		else:
-			print("Exited back to start menu")
+            if selection_menu == "back":
+                # Return to main menu
+                break
+    else:
+        # Return error message if no valid option is selected
+        print("No option selected, please try again -")
