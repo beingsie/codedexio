@@ -19,6 +19,7 @@ Battle vs NPC's in terminal! Upgrade character through leveling up your `XP`, `H
 ### ⚔ [Battle]
 
 ## 🧪 Experimental
+- [ ] Loot Drops based on item rarity.
 - [ ] Dialogue
   - [ ] Back story for each character that connects them via dialogue.
 - [ ] Selection Mode
