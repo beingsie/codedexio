@@ -27,3 +27,4 @@ for x in range(0, 50):
             print(f"Legendary Drop [{trigger_lootdrop}]")
         else:
             print(f"No luck, empty drop! [{trigger_lootdrop}]")
+            
