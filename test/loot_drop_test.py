@@ -9,7 +9,7 @@ trigger_lootdrop = 0
 enemy_defeated = True
 
 # DEV
-for x in range(0, 35):
+for x in range(35):
 
     # Trigger a lootdrop after defeating NPC
     if enemy_defeated == True:
