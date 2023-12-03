@@ -8,15 +8,13 @@ trigger_lootdrop = 0
 
 enemy_defeated = True
 
-range_max = 20
-
 # DEV
 for x in range(0, 35):
 
     # Trigger a lootdrop after defeating NPC
     if enemy_defeated == True:
         # Lootdrop rarity (0 = no drop, 1-10 = common, 11-15 = rare, 16-18 = epic, 19-20 = legendary)
-        trigger_lootdrop = randint(0, range_max)
+        trigger_lootdrop = randint(0, 20)
 
         # Loot rarity
         if trigger_lootdrop >= 1 and trigger_lootdrop <= 10:
