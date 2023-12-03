@@ -8,22 +8,24 @@ trigger_lootdrop = 0
 
 enemy_defeated = True
 
+range_max = 20
+
 # DEV
 for x in range(0, 35):
 
     # Trigger a lootdrop after defeating NPC
     if enemy_defeated == True:
-        # Lootdrop rarity (0 = no drop, 1-4 = common, 5-7 = rare, 8-9 = epic, 10 = legendary)
-        trigger_lootdrop = randint(0, 10)
+        # Lootdrop rarity (0 = no drop, 1-10 = common, 11-15 = rare, 16-18 = epic, 19-20 = legendary)
+        trigger_lootdrop = randint(0, range_max)
 
         # Loot rarity
-        if trigger_lootdrop in (1, 2, 3, 4):
+        if trigger_lootdrop >= 1 and trigger_lootdrop <= 10:
             print(f"Common Drop [{trigger_lootdrop}]")
-        elif trigger_lootdrop in (5, 6, 7):
+        elif trigger_lootdrop >= 11 and trigger_lootdrop <= 15:
             print(f"Rare Drop [{trigger_lootdrop}]")
-        elif trigger_lootdrop in (8, 9):
+        elif trigger_lootdrop >= 16 and trigger_lootdrop <= 18:
             print(f"Epic Drop [{trigger_lootdrop}]")
-        elif trigger_lootdrop == 10:
+        elif trigger_lootdrop >= 19 and trigger_lootdrop <= 20:
             print(f"Legendary Drop [{trigger_lootdrop}]")
         else:
             print(f"No luck, empty drop! [{trigger_lootdrop}]")
