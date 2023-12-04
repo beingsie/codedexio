@@ -1,0 +1,8 @@
+# Ignore everything at the root
+/*
+
+# But not the final_project directory
+!/html/final_project/**
+
+# Inside final_project, we want everything
+!/html/final_project/*
