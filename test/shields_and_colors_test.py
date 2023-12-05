@@ -17,7 +17,8 @@ RESET = "\033[0m"  # Reset text color to default
 hp = 150
 
 # Shield points rarity
-shield_common = 15
+shield_common = 5
+shield_uncommon = 15
 shield_rare = 25
 shield_epic = 50
 shield_legendary = 75
