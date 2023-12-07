@@ -54,3 +54,7 @@ Battle vs NPC's in terminal! Upgrade character through leveling up your `XP`, `H
 - [x] Create logic to determine the amount of attack power generated for an attack from 'enemies'. [fa3203b](https://github.com/beingsie/codedexio/commit/fa3203b99ab62b6e37504fe2663be78f0fd630d6)
 	- Use similar logic from [99 Bottles](https://github.com/beingsie/codedexio/blob/main/courses/python/04_loops/99_bottles.py).
  	- Attack damage range should mirror the up to the character's max damage.
+
+#
+#### Hot Fixes:
+- `Press Any Key To Continue` option does not work with all keys except `enter`.
