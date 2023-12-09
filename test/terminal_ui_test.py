@@ -42,7 +42,7 @@ print("""
 ║     ► Main Menu      ║
 ╚══════════════════════╝
   ║
-  ║ ♢ 1. Start	
+  ║ ◆ 1. Start	
   ║ ♢ 2. Game Rules
   ║ ♢ 3. Exit
   ║""")
