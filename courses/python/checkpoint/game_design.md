@@ -7,9 +7,8 @@ Battle vs NPC's in terminal! Upgrade character through leveling up your `XP`, `H
 - [ ] FAQs
 
 ## ⚡ In Progress:
-- [ ] Menu Logic
-	- [ ] Add submenu's
- 		- [ ] Game Mode: Options `Dice Roll`, `Normal` (Default game mode)
+- [ ] Game Mode Logic
+	- [ ] Create a chance based version based on the `randint` function.
 
 ## 🧪 Experimental
 ### [Battle]
@@ -50,8 +49,14 @@ Battle vs NPC's in terminal! Upgrade character through leveling up your `XP`, `H
 	- [ ] Game rules
 
 ## ✅ Completed:
+### 📅 12/26/23
+- [x] Menu Logic [50ea06b](https://github.com/beingsie/codedexio/commit/50ea06b9eb498e8e6fb3908542baa7488bc737ef)
+	- [x] Add submenu's
+ 		- [x] Game Mode: Options `Dice Roll`, `Normal` (Default game mode)
+### 📅 11/21/23
 - [x] Offensive Attacking. [46809e8](https://github.com/beingsie/codedexio/commit/46809e822fe1c2046c7107ceccf3e47f80655a91)
 - [x] Counter Attacking. [46809e8](https://github.com/beingsie/codedexio/commit/46809e822fe1c2046c7107ceccf3e47f80655a91)
+### 📅 11/16/23
 - [x] Improve character selection input validation with numeration. [632f76f](https://github.com/beingsie/codedexio/commit/632f76f943c0c07c2ffa250061f501e367799c92)
 - [x] Create logic to determine the amount of attack power generated for an attack from 'enemies'. [fa3203b](https://github.com/beingsie/codedexio/commit/fa3203b99ab62b6e37504fe2663be78f0fd630d6)
 	- Use similar logic from [99 Bottles](https://github.com/beingsie/codedexio/blob/main/courses/python/04_loops/99_bottles.py).
