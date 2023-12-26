@@ -2,18 +2,17 @@
 user_is_registered = True
 
 # Player name
-player_name = input("     ♢ Enter a Username > ")
+player_name = input("Enter a Username > ")
 
 while user_is_registered:
     print("Main Menu")
     print("")
-    print("Start")
-    print("Options")
-    print("Exit")
+    print("- Start")
+    print("- Game Mode")
+    print("- Exit")
     print("")
     # Selection input
-    print("Select an option")
-    selection_menu = input(f"  {player_name.title()}: ").lower()
+    selection_menu = input(f"{player_name.title()}: ").lower()
     print("")
 
     if selection_menu == "start":
@@ -21,55 +20,60 @@ while user_is_registered:
         while user_is_registered:
             print("Hero Selection")
             print("")
-            print("1.) Tracer")
+            print("- Char 1")
             print("")
-            print("--- Also known as Lena Oxton, is a charismatic and agile hero in Overwatch with the unique ability to manipulate time, making her a formidable and beloved member of the game's roster.")
+            print("- Char 2")
             print("")
-            print("2.) Soldier 76")
+            print("- Char 3")
             print("")
-            print("--- Real name is Jack Morrison, is a vigilante-style hero in Overwatch armed with a pulse rifle, tactical visor, and biotic field, known for his relentless pursuit of justice and his iconic mask.")
-            print("")
-            print("3.) Back")
+            print("- Back")
             print("")
 
             # Selection input
-            selection_menu = input(f"  {player_name.title()}: ").lower()
+            selection_menu = input(f"{player_name.title()}: ").lower()
 
             if selection_menu == "back":
                 # Return to main menu
                 break
 
-    elif selection_menu == "b":
+    elif selection_menu == "game mode":
         # Main menu submenu
         while user_is_registered:
-            print("Menu B")
-            print("1")
-            print("2")
-            print("Back")
+            print("Game Mode")
+            print("")
+            print("- Dice Roll")
+            print("- Normal")
+            print("- Back")
+            print("")
             # Selection input
-            selection_menu = input(f"  {player_name.title()}: ").lower()
+            selection_menu = input(f"{player_name.title()}: ").lower()
 
-            if selection_menu == "back":
-                # Return to main menu
+            if selection_menu == "dice roll":
+                print("Game Mode is now in Dice Roll")
+            elif selection_menu == "back":
                 break
+            else:
+                print("Try again.")
 
-    elif selection_menu == "c":
-        # Main menu submenu
-        while user_is_registered:
-            print("Menu C")
-            print("1")
-            print("2")
-            print("Back")
-            # Selection input
-            selection_menu = input(f"  {player_name.title()}: ").lower()
+    # elif selection_menu == "c":
+    #     # Main menu submenu
+    #     while user_is_registered:
+    #         print("Menu C")
+    #         print("")
+    #         print("- 1")
+    #         print("- 2")
+    #         print("- Back")
+    #         print("")
+    #         # Selection input
+    #         selection_menu = input(f"{player_name.title()}: ").lower()
 
-            if selection_menu == "back":
-                # Return to main menu
-                break
+    #         if selection_menu == "back":
+    #             # Return to main menu
+    #             break
     elif selection_menu == "exit":
         print("Thanks for playing!")
         break
 
     else:
         # Return error message if no valid option is selected
-        print(f"  {player_name.title()}: ")
+        print(f"{player_name.title()}: ")
