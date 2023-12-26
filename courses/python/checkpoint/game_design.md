@@ -1,20 +1,21 @@
 # 👨‍💻 Terminal Mini Game
 Battle vs NPC's in terminal! Upgrade character through leveling up your `XP`, `HP` and `Attack Power`.
-
-## ⚡ In Progress
-### [Battle]
-- [ ] `Run Away` - Loses 1/4 of their `XP`.
-### [Dialogue]
-- [ ] Dialogue using `randint` to pick a line that connects the characters through the `lore` story line. in battle. (After selecting the `run away` option)
  
 ## 📃 To-Do:
 - [ ] Character descriptions
 - [ ] Game rules
 - [ ] FAQs
 
-### ⚔ [Battle]
+## ⚡ In Progress:
+- [ ] Menu Logic
+	- [ ] Add submenu's
+ 		- [ ] Game Mode: Options `Dice Roll`, `Normal` (Default game mode)
 
 ## 🧪 Experimental
+### [Battle]
+- [ ] `Run Away` - Loses 1/4 of their `XP`.
+### [Dialogue]
+- [ ] Dialogue using `randint` to pick a line that connects the characters through the `lore` story line. in battle. (After selecting the `run away` option)
 ### UI
 - [ ] Menu selection activate state (Blinking menu cursor).
 - [ ] ■■■□□□ bar for `HP`. Calculate the number of empty squares to full depending on their max hp / by 10 (squares)
