@@ -2,13 +2,17 @@
 Battle vs NPC's in terminal! Upgrade character through leveling up your `XP`, `HP` and `Attack Power`.
  
 ## 📃 To-Do:
+- [ ] Game Mode Logic
+	- [ ] Create a chance based version based on the `randint` function.
 - [ ] Character descriptions
 - [ ] Game rules
 - [ ] FAQs
 
 ## ⚡ In Progress:
-- [ ] Game Mode Logic
-	- [ ] Create a chance based version based on the `randint` function.
+- [ ] Dice roll
+	- [ ] Give player a minimum of 1 dice roll.
+	- [ ] Auto Selection Countdown (5 seconds: Is enabled if user spends all dice rolls.)
+		- **Auto selects** character if player fails to select after using all available dice rolls.
 
 ## 🧪 Experimental
 ### [Battle]
@@ -25,13 +29,6 @@ Battle vs NPC's in terminal! Upgrade character through leveling up your `XP`, `H
 - [ ] Loot Drops based on item rarity.
 - [ ] Dialogue
   - [ ] Back story for each character that connects them via dialogue.
-- [ ] Selection Mode
-	- Give player ability to select type of character selection mode: `dice roll` or `manual`. 
-- [ ] Selection logic based on the `random` module function `randint`.
-	- [ ] Dice roll
-		- [ ] Give player has 3 dice rolls.
-		- [ ] Countdown (5 seconds)
-    	- **auto selects** character if player fails to select after using all available dice rolls.
 - [ ] Shop
   - User can spend XP for the following items:
 	- Heal Packs
@@ -40,8 +37,6 @@ Battle vs NPC's in terminal! Upgrade character through leveling up your `XP`, `H
   - Commands that alter gameplay:
     - Stats
     - Storyline
-- [ ] Add a selection countdown timer
-  - Auto selects a character when timer expires.
 - [ ] Story line
   - Chapters
 - [ ] Commands
