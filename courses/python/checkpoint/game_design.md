@@ -2,15 +2,10 @@
 Battle vs NPC's in terminal! Upgrade character through leveling up your `XP`, `HP` and `Attack Power`.
 
 ## ⚡ In Progress
-### UI
-- [ ] Menu selection activate state (Blinking menu cursor).
-- [ ] ■■■□□□ bar for `HP`. Calculate the number of empty squares to full depending on their max hp / by 10 (squares)
-- [ ] Text-based UI
-- [ ] Emojies
 ### [Battle]
 - [ ] `Run Away` - Loses 1/4 of their `XP`.
 ### [Dialogue]
-- [ ] Dialogue using `randit` to pick a line that connects the characters in battle. (After selecting the `run away` option)
+- [ ] Dialogue using `randint` to pick a line that connects the characters through the `lore` story line. in battle. (After selecting the `run away` option)
  
 ## 📃 To-Do:
 - [ ] Character descriptions
@@ -20,7 +15,13 @@ Battle vs NPC's in terminal! Upgrade character through leveling up your `XP`, `H
 ### ⚔ [Battle]
 
 ## 🧪 Experimental
+### UI
+- [ ] Menu selection activate state (Blinking menu cursor).
+- [ ] ■■■□□□ bar for `HP`. Calculate the number of empty squares to full depending on their max hp / by 10 (squares)
+- [ ] Text-based UI
+- [ ] Emojies
 - [ ] ANSI escape codes for text colors.
+### Gameplay
 - [ ] Loot Drops based on item rarity.
 - [ ] Dialogue
   - [ ] Back story for each character that connects them via dialogue.
