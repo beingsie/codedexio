@@ -5,5 +5,5 @@ input("Press enter to roll your dice! ")
 print("Dice is rolling ...")
 
 for x in range(1, 10):
-  d_roll = randint(1, 3)
-  print(d_roll)
+	d_roll = randint(1, 3)
+	print(d_roll)
