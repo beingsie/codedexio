@@ -1,5 +1,11 @@
 # 👨‍💻 Terminal Mini Game
 Battle vs NPC's in terminal! Upgrade character through leveling up your `XP`, `HP` and `Attack Power`.
+
+## ⚡ In Progress:
+- [ ] Dice roll
+	- [x] Give player a minimum of 1 dice roll.
+	- [ ] Auto Selection Countdown (5 seconds: Is enabled if user spends all dice rolls.)
+		- **Auto selects** character if player fails to select after using all available dice rolls.
  
 ## 📃 To-Do:
 - [ ] Game Mode Logic
@@ -7,12 +13,6 @@ Battle vs NPC's in terminal! Upgrade character through leveling up your `XP`, `H
 - [ ] Character descriptions
 - [ ] Game rules
 - [ ] FAQs
-
-## ⚡ In Progress:
-- [ ] Dice roll
-	- [x] Give player a minimum of 1 dice roll.
-	- [ ] Auto Selection Countdown (5 seconds: Is enabled if user spends all dice rolls.)
-		- **Auto selects** character if player fails to select after using all available dice rolls.
 
 ## 🧪 Experimental
 ### [Battle]
