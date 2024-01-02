@@ -10,7 +10,7 @@ Battle vs NPC's in terminal! Upgrade character through leveling up your `XP`, `H
 
 ## ⚡ In Progress:
 - [ ] Dice roll
-	- [ ] Give player a minimum of 1 dice roll.
+	- [x] Give player a minimum of 1 dice roll.
 	- [ ] Auto Selection Countdown (5 seconds: Is enabled if user spends all dice rolls.)
 		- **Auto selects** character if player fails to select after using all available dice rolls.
 
