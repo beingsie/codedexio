@@ -226,6 +226,10 @@ section.hero {
     height: fit-content;
 }
 
+.grid-content-wrapper .hatchling-name-tag p {
+    color: #0E0C0C;
+}
+
 .hatchling-wrapper {
     position: absolute;
     top: -180px;
