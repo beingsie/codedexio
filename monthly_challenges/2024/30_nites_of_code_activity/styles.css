@@ -117,6 +117,7 @@ footer .opensource_links {
     display: flex;
     align-items: center;
     gap: 16px;
+    font-size: 14px;
     color: #B8F300;
     transition: all 0.25s ease;
 }
@@ -315,5 +316,30 @@ section.hero {
 
     .grid-item{
         font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .activity-grid .square-activity-none {
+        width: 35px;
+        height: 35px;
+        border-radius: 14px;
+    }
+
+    .activity-grid .grid-container {
+        gap: 8px;
+    }
+
+    .grid-item{
+        font-size: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 18px;
+    }
+
+    .day-progress,
+    .day-progress span {
+        font-size: 48px !important;
     }
 }
