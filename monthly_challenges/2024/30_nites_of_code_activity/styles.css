@@ -369,16 +369,62 @@ section.hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #454545;
+    border: 2px solid;
+    border-color: #454545;
     width: 72px;
     height: 72px;
     border-radius: 28px;
-    transition: all 0.25s ease;
+    transition: all 0.2s ease;
+}
+
+.activity-grid .square-activity-none:active {
+    border-color: #656565 !important;
+}
+
+.jelloActive {
+    animation: jelloActive 1s ease-in-out;
+    transform-origin: center center; /* Set the transform origin to the center bottom */
+}
+
+@keyframes jelloActive {
+    0% {
+        transform: scale(0.8) rotate(0deg); /* Start with a pushed state */
+    }
+    30% {
+        transform: scale(1.25) rotate(-5deg);
+    }
+    40% {
+        transform: scale(0.8) rotate(3deg);
+    }
+    50% {
+        transform: scale(1.1) rotate(-3deg);
+    }
+    60% {
+        transform: scale(1.1) rotate(2deg);
+    }
+    70% {
+        transform: scale(1.1) rotate(-2deg);
+    }
+    80%, 100% {
+        transform: scale(1) rotate(0deg);
+    }
 }
 
 .activity-grid .square-activity-none:hover {
     border-color:white;
     color: white;
+    transform: scale(1.1);
+}
+
+.active p {
+    border-color: white !important;
+    color: white;
+}
+
+.highlight {
+    border-color: #B3EB01 !important;
+    color: white;
+    box-shadow: 0px 0px 17.1px 0px rgba(177, 234, 1, 0.37);
 }
 
 .grid-item {
