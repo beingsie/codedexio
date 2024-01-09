@@ -24,7 +24,6 @@
                     <ul>
                         <li><a href="#">About</a></li>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#"><i class="fa-solid fa-crown" style="opacity: 0.25;"></i></a></li>
                     </ul>
                 </nav>
             </div>
@@ -33,8 +32,20 @@
             <div class="container">
                 <div class="hero-wrapper">
                     <div class="hero-content">
-                        <h1 class="ps2p">#30NitesOfCode</h1>
                         <h2 class="ps2p day-progress">Day <span id="currentDay"></span></h2>
+                        <div class="hero-content-wrapper">
+                            <div class="headings">
+                                <h1 class="ps2p">#30NitesOfCode</h1>
+                                <p>Enter your <span><a href="https://www.codedex.io/" target="_blank">Codédex.io</a></span> username if you’re participating in the <span><a href="https://twitter.com/hashtag/30NitesOfCode?src=hashtag_click&f=live" target="_blank">#30NitesOfCode</a></span> challenge.</p>
+                            </div>
+                            <div class="fetch-pet">
+                                <input type="text" id="usernameInput" placeholder="Enter Codédex username" autocomplete="on">
+                                <button onclick="updateImage()">
+                                    <i class="fa-solid fa-egg"></i>
+                                    <p>Fetch Pet</p>
+                                </button>
+                            </div>
+                        </div>
                         <div class="time-remaining">
                             <i class="fa-regular fa-clock"></i>
                             <div id="remaining-time" class="ps2p"></div>
@@ -42,11 +53,11 @@
                     </div>
                     <div class="grid-content-wrapper">
                         <div class="hatchling-name-tag">
-                            <p class="ps2p">Atrax</p>
+                            <input id="petName" class="ps2p" placeholder="Pet name"></input>
                         </div>
                         <div class="hatchling-wrapper">
-                            <img class="hatchling" src="https://www.codedex.io/api/petStatus?user=Beingsie"
-                                alt="Atrax the warrior">
+                            <img class="hatchling" id="hatchlingImage"
+                                src="https://www.codedex.io/api/petStatus?user=Beingsie" alt="Atrax the warrior">
                         </div>
                         <!-- Grid -->
                         <div class="activity-grid">
@@ -87,6 +98,17 @@
             </div>
         </footer>
     </main>
+
+    <div id="alertModal" class="modal">
+        <div id="modalWrapper" class="modal-content">
+            <div class="tag ps2p">@Beingsie</div>
+            <p id="modalMessage" class="ps2p"></p>
+            <div class="close ps2p">
+                <p>Ok</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="script.js"></script>
 </body>
