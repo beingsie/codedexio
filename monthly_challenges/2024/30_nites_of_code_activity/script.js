@@ -67,3 +67,47 @@ function displayCurrentDay() {
 
 // Call the function to display the current day of the month
 displayCurrentDay();
+
+
+// Function to show a success modal with the specified message
+function showSuccessModal(message) {
+    const alertModal = document.getElementById("alertModal");
+    const modalMessage = document.getElementById("modalMessage");
+    const modalWrapper = document.getElementById("modalWrapper")
+
+    modalMessage.textContent = message;
+    alertModal.style.display = "flex";
+
+    modalWrapper.classList.add("bounceIn")
+}
+
+// Function to show an error modal with the specified message
+function showErrorModal(message) {
+    const alertModal = document.getElementById("alertModal");
+    const modalMessage = document.getElementById("modalMessage");
+    const modalWrapper = document.getElementById("modalWrapper")
+
+    modalMessage.textContent = message;
+    alertModal.style.display = "flex";
+
+    modalWrapper.classList.add("bounceIn")
+}
+
+// Function to close the modal
+function closeModal() {
+    const alertModal = document.getElementById("alertModal");
+    alertModal.style.display = "none";
+}
+
+// Add click event listener to the close button
+const closeButton = document.querySelector(".close");
+if (closeButton) {
+    closeButton.addEventListener("click", closeModal);
+}
+
+// Add click event listener to the alertModal to close it when clicked
+const alertModal = document.getElementById("alertModal");
+if (alertModal) {
+    alertModal.addEventListener("click", closeModal);
+}
+

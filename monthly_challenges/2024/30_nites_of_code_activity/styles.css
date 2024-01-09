@@ -127,6 +127,25 @@ footer .opensource_links {
     text-decoration: underline;
 }
 
+.close {
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    background-color: #B3EB01;
+    border-radius: 17px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.close:hover {
+    background-color: #cbff1e;
+}
+
+.close:active {
+    opacity: 0.75;
+}
+
 footer nav {
     padding: 32px 0;
     border-top: 1px solid #414543;
@@ -284,6 +303,69 @@ section.hero {
 .grid-item {
     cursor: pointer;
     color: #414543;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    backdrop-filter: blur(16px);
+    background-color: rgba(0,0,0,0.90);
+    transition: all 0.3s ease;
+    z-index: 3;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    text-align: center;
+    gap: 24px;
+}
+
+#modalMessage {
+    max-width: 700px;
+    min-width: fit-content;
+    margin: 0 auto;
+    padding: 24px;
+    color: white;
+    line-height: 32px;
+    border: solid 1px #B3EB01;
+    border-radius: 24px;
+}
+
+
+/* Define the keyframes for the bounce-in animation */
+@keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      opacity: 0.7;
+      transform: scale(1.05);
+    }
+    70% {
+      opacity: 1;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Apply the animation to an element */
+  .bounceIn {
+    animation: bounceIn 1s ease-in-out;
 }
 
 /* Mobile */
