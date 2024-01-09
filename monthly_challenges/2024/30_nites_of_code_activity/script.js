@@ -234,3 +234,32 @@ function loadSavedUrl() {
 // Load the saved URL when the page loads
 loadSavedUrl();
 
+// Function to save the content to local storage
+function saveToLocalStorage(content) {
+    localStorage.setItem("petName", content);
+}
+
+// Function to load the saved content from local storage when the page loads
+window.onload = function() {
+    const petNameInput = document.getElementById("petName");
+    const savedPetName = localStorage.getItem("petName");
+    
+    if (savedPetName) {
+        petNameInput.value = savedPetName;
+    }
+    
+    // Add an event listener to handle changes and save to local storage
+    petNameInput.addEventListener("input", function() {
+        saveToLocalStorage(petNameInput.value);
+    });
+
+    // Add an event listener for the "Enter" key press
+    petNameInput.addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            // Prevent the default behavior of the Enter key
+            event.preventDefault();
+            // Save the content to local storage
+            saveToLocalStorage(petNameInput.value);
+        }
+    });
+};
