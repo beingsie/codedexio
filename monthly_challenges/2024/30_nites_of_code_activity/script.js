@@ -65,7 +65,7 @@ function displayCurrentDay() {
     currentDayElement.textContent = currentDayOfMonth;
 }
 
-// Call the function to display the current day of the month
+// Call the function to display the current day of the month and highlight the corresponding grid item
 displayCurrentDay();
 
 
@@ -110,4 +110,73 @@ const alertModal = document.getElementById("alertModal");
 if (alertModal) {
     alertModal.addEventListener("click", closeModal);
 }
+
+// Function to update the image based on the username provided by the user
+function updateImage() {
+    // Get the input element and the image element by their IDs
+    const usernameInput = document.getElementById("usernameInput");
+    const hatchlingImage = document.getElementById("hatchlingImage");
+
+    // Get the username provided by the user from the input element
+    const username = usernameInput.value;
+
+    // Create the URL by appending the username
+    const imageUrl = `https://www.codedex.io/api/petStatus?user=${username}`;
+
+    // Check if the username input is empty
+    if (username.trim() === "") {
+        // Show an error message for empty input
+        showErrorModal("Hm.. You're either not a Codédex member or have mistyped your username.");
+        return;
+    }
+
+    // Create a new image element to check if the new image loads successfully
+    const newImage = new Image();
+    
+    // Set the source of the new image
+    newImage.src = imageUrl;
+
+    // Success messages list
+    const successMessages = [
+        "That's the CUTEST pet!",
+        "Your pet is ADORABLE!",
+        "What a LOVELY pet!",
+        "You have a BEAUTIFUL pet!",
+    ];
+
+    newImage.onload = function() {
+        // Image loaded successfully
+        hatchlingImage.src = imageUrl; // Update the displayed image
+    
+        // Select a random message from the successMessages array
+        const randomIndex = Math.floor(Math.random() * successMessages.length);
+        const randomMessage = successMessages[randomIndex];
+    
+        showSuccessModal(randomMessage);
+    
+        // Store the URL in localStorage
+        localStorage.setItem("imageUrl", imageUrl);
+    };    
+
+    // Check if the new image fails to load
+    newImage.onerror = function() {
+        // Image failed to load
+        showError   ("Error updating image URL. Please try again with a valid username.");
+    };
+
+    // Store the username in localStorage
+    localStorage.setItem("username", username);
+}
+
+// Function to load the saved URL from localStorage
+function loadSavedUrl() {
+    const savedUrl = localStorage.getItem("imageUrl");
+    if (savedUrl) {
+        const hatchlingImage = document.getElementById("hatchlingImage");
+        hatchlingImage.src = savedUrl;
+    }
+}
+
+// Load the saved URL when the page loads
+loadSavedUrl();
 

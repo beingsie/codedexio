@@ -28,8 +28,8 @@ a {
 }
 
 h1 {
-    font-size: 24px;
-    line-height: inherit;
+    font-size: 20px;
+    line-height: 20px;
 }
 
 /* Container */
@@ -174,6 +174,81 @@ section.hero {
     align-items: flex-end;
 }
 
+.hero-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: fit-content;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    padding: 24px;
+    background-color: #171C19;
+    border-radius: 24px;
+}
+
+.hero-content-wrapper .headings {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero-content-wrapper .headings span a {
+    color: #B3EB01;
+}
+
+.hero-content-wrapper .headings p {
+    max-width: 333px;
+    line-height: 24px;
+    color: #848484;
+}
+
+.hero-content-wrapper .fetch-pet {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.hero-content-wrapper .fetch-pet input,
+.hero-content-wrapper .fetch-pet button {
+    padding: 16px;
+    border-radius: 16px;
+    border: none;
+}
+
+.hero-content-wrapper .fetch-pet input {
+    width: 100%;
+    max-width: 200px;
+    background-color: white;
+}
+
+.hero-content-wrapper .fetch-pet input::placeholder {
+    color: #989898;
+}
+
+.hero-content-wrapper .fetch-pet button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    background-color: #FC4B25;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.hero-content-wrapper .fetch-pet button:hover {
+    background-color: #ff7a5d;
+}
+
+.hero-content-wrapper .fetch-pet button:active {
+    background-color: #ec4823;
+}
+
+.hero-content-wrapper .fetch-pet button i,
+.hero-content-wrapper .fetch-pet button p {
+    color: white;
+}
+
 .hero-wrapper {
     width: fit-content;
     margin: 0 auto;
@@ -184,9 +259,7 @@ section.hero {
 }
 
 .hero-content h1 {
-    transform: rotate(7.44deg);
-    transform-origin: top left;
-    color: #0E0C0C;
+    color: white;
 }
 
 .hero-content .day-progress {
@@ -195,6 +268,7 @@ section.hero {
     justify-content: center;
     font-size: 48px;
     line-height: inherit;
+    transform: rotate(8deg);
 }
 
 .hero-content .day-progress span {
@@ -241,14 +315,21 @@ section.hero {
     border-radius: 24px;
     align-items: flex-start;
     position: absolute;
-    top: -24px;
+    top: -28px;
     z-index: 2;
     height: fit-content;
 }
 
-.grid-content-wrapper .hatchling-name-tag p {
+.grid-content-wrapper .hatchling-name-tag input {
+    display: inline-block !important;
+    width: 120px;
+    text-align: center;
     color: #0E0C0C;
+    border: none;
+    outline: none;
 }
+
+
 
 .hatchling-wrapper {
     position: absolute;
@@ -342,6 +423,15 @@ section.hero {
     border-radius: 24px;
 }
 
+.tag {
+    width: fit-content;
+    margin: 0 auto;
+    background-color: white;
+    padding: 8px;
+    border-radius: 99px;
+    font-size: 12px;
+    color: black;
+}
 
 /* Define the keyframes for the bounce-in animation */
 @keyframes bounceIn {
@@ -366,7 +456,7 @@ section.hero {
   /* Apply the animation to an element */
   .bounceIn {
     animation: bounceIn 1s ease-in-out;
-}
+  }
 
 /* Mobile */
 @media (max-width: 980px) {
@@ -383,7 +473,23 @@ section.hero {
     .hero-content h2,
     .hero-content p,
     .time-remaining {
-        transform: rotate(0);
+        transform: rotate(0) !important;
+    }
+
+    .hero-content > * {
+        text-align: center;
+    }
+
+    .hero-content-wrapper .fetch-pet {
+        flex-direction: column;
+    }
+
+    .hero-content-wrapper .fetch-pet input,
+    .hero-content-wrapper .fetch-pet button {
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
     }
 
     .opensource_links {
