@@ -170,7 +170,7 @@ section.hero {
     display: flex;
     flex-direction: column;
     width: fit-content;
-    gap: 54px;
+    gap: 32px;
     align-items: flex-end;
 }
 
