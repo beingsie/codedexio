@@ -4,6 +4,39 @@ const gridContainer = document.getElementById("grid-container");
 // Initialize a variable to keep track of the numbers
 let number = 1;
 
+// Function to save the state of the selected grid item to local storage
+function saveGridItemState() {
+    const gridItems = document.querySelectorAll(".grid-item");
+    const gridItemState = {};
+
+    gridItems.forEach((gridItem, index) => {
+        gridItemState[index] = {
+            active: gridItem.classList.contains("active"),
+            jelloActive: gridItem.classList.contains("jelloActive")
+        };
+    });
+
+    localStorage.setItem("gridItemState", JSON.stringify(gridItemState));
+}
+
+// Function to restore the state of the selected grid item from local storage
+function restoreGridItemState() {
+    const gridItemState = JSON.parse(localStorage.getItem("gridItemState"));
+
+    if (gridItemState) {
+        const gridItems = document.querySelectorAll(".grid-item");
+
+        gridItems.forEach((gridItem, index) => {
+            if (gridItemState[index].active) {
+                gridItem.classList.add("active");
+            }
+            if (gridItemState[index].jelloActive) {
+                gridItem.classList.add("jelloActive");
+            }
+        });
+    }
+}
+
 // Loop through 5 rows
 for (let row = 0; row < 5; row++) {
     // Loop through 6 columns within each row
@@ -17,6 +50,13 @@ for (let row = 0; row < 5; row++) {
         pTag.classList.add("ps2p", "square-activity-none"); // Add CSS classes to the paragraph
         pTag.textContent = number++; // Set the content of the paragraph to the current number
 
+        // Add a click event listener to toggle the class when the grid item is clicked
+        gridItem.addEventListener("click", () => {
+            gridItem.classList.toggle("active"); // Toggle the "active" class
+            gridItem.classList.toggle("jelloActive"); // Toggle the "jelloActive" class
+            saveGridItemState(); // Save the state when a grid item is clicked
+        });
+
         // Append the paragraph element to the grid item
         gridItem.appendChild(pTag);
 
@@ -24,6 +64,10 @@ for (let row = 0; row < 5; row++) {
         gridContainer.appendChild(gridItem);
     }
 }
+
+// Call the function to restore the state of the selected grid items when the page loads
+restoreGridItemState();
+
 
 // Function to calculate remaining time in 24-hour format
 function calculateRemainingTime() {
@@ -63,6 +107,16 @@ function displayCurrentDay() {
     // Display the current day of the month in the specified element
     const currentDayElement = document.getElementById("currentDay");
     currentDayElement.textContent = currentDayOfMonth;
+
+    // Highlight the grid item with the same number as the current day
+    const gridItems = document.querySelectorAll(".square-activity-none");
+
+    gridItems.forEach((gridItem) => {
+        const gridItemNumber = parseInt(gridItem.textContent, 10);
+        if (gridItemNumber === currentDayOfMonth) {
+            gridItem.classList.add("highlight"); // Add a highlight class
+        }
+    });
 }
 
 // Call the function to display the current day of the month and highlight the corresponding grid item
