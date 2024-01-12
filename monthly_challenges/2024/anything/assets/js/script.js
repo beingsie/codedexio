@@ -4,7 +4,6 @@ window.onload = function() {
     const challengeTag = document.getElementById("challengeTag");
     const miniDino = document.getElementById("miniDino");
     const anythingHeading = document.getElementById("mainHeading");
-    const mainHeadingArrow = document.getElementById("mainHeadingArrow");
 
     // Add fadeInBounce animation through class to tag
     challengeTag.classList.add("bounceUp");
