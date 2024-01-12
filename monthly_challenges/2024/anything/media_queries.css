@@ -1,0 +1,17 @@
+@media screen and (max-width: 960px) {
+    section.hero h1 {
+        font-size: 72px;
+    }
+
+    .tag {
+        padding: 8px;
+    }
+
+    .tag p {
+        font-size: 16px;
+    }
+
+    .mini-dino {
+        top: -12px;
+    }
+}

@@ -1,3 +1,20 @@
+/*  Fonts */
+font-face {
+    font-family: 'Geist-Medium';
+    src: url('fonts/Geist-Medium.woff2') format('woff2'),
+        url('fonts/Geist-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+font-face {
+    font-family: 'Geist-SemiBold';
+    src: url('fonts/Geist-SemiBold.woff2') format('woff2'),
+        url('fonts/Geist-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Reset */
 * {
     padding: 0;
@@ -17,3 +34,112 @@ body {
     padding: 0 24px;
 }
 
+/* Header */
+
+header {
+    background-color: #181818;
+}
+
+header nav  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    list-style: none;
+}
+
+header nav ul li a {
+    font-family: 'Geist-Medium', sans-serif;
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.sub-menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-logo {
+    font-family: 'Geist-Medium', sans-serif;
+    font-size: 32px;
+    color: #FC4B25;
+}
+
+/* Hero section */
+
+section.hero {
+    padding: 96px 0;
+    background-color: #181818;
+}
+
+.mini-dino {
+    position: absolute;
+    z-index: 0;
+    top: -16px;
+    width: 100%;
+    max-width: 69px;
+    transition: all 0s ease;
+    /* For JavaScript */
+    opacity: 0;
+}
+
+section.hero h1 {
+    font-family: 'Geist-SemiBold', sans-serif;
+    transform: rotate(-3deg);
+    /* color: #FC4B25; */
+    color: white;
+    font-family: Geist;
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140px;
+    /* 100% */
+    letter-spacing: -2.8px;
+    opacity: 0;
+}
+
+section.hero h1 span {
+    color: #FC4B25;
+}
+
+.tag {
+    position: absolute;
+    z-index: 1;
+    display: inline-flex;
+    transform: rotate(-9deg);
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: 0px 0px 37.9px 0px rgba(24, 24, 24, 0.78);
+    backdrop-filter: blur(16px);
+}
+
+.tag p {
+    font-family: 'Geist-Medium', sans-serif;
+    color: #ffffff;
+    font-family: Geist;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 100% */
+    letter-spacing: -0.24px;
+}
+
+section.hero .content-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
