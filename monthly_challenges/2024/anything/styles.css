@@ -61,10 +61,33 @@ header nav ul li a {
     text-decoration: none;
 }
 
+header nav ul li a > * {
+    transition: all 0.25s ease-in-out;
+}
+
+header nav ul li a:hover > .arrow-icon {
+    color: #FC4B25;
+    transform: translateX(4px);
+}
+
+.arrow-icon {
+    color: #6f6f6f;
+}
+
 .sub-menu {
     display: flex;
     align-items: center;
     gap: 32px;
+}
+
+.sub-menu ul.links-socials a:hover {
+    color: #FC4B25;
+}
+
+.sub-menu ul:nth-child(1) > li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .nav-logo {
