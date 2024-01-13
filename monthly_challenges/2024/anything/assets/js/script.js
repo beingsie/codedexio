@@ -1,4 +1,4 @@
-// Do it
+// On window load
 window.onload = function() {
     // Get elements
     const challengeTag = document.getElementById("challengeTag");
@@ -19,7 +19,7 @@ window.onload = function() {
     }, 145);
 }
 
-const closeBtn = document.getElementById("closeBtn");
+const closeButtons = document.getElementsByClassName("close");
 const modalWindow = document.getElementById("modalWindow");
 const modalContent = document.getElementById("modalContent");
 const whatLink = document.getElementById("whatLink");
@@ -39,16 +39,32 @@ function openModal(event) {
 // On click run function
 closeBtn.addEventListener("click", closeModal);
 
+// Attach the closeModal function to each element
+for (let i = 0; i < closeButtons.length; i++) {
+    const close = closeButtons[i];
+    close.addEventListener('click', closeModal);
+}
+
+// Attach an event listener to the document to handle clicks outside modalContent
+modalWindow.addEventListener('click', function(event) {
+    if (event.target !== modalContent && !modalContent.contains(event.target)) {
+        closeModal();
+    }
+});
+
 function closeModal() {
     modalContent.classList.remove("bounceIn");
 
     setTimeout(() => {
         modalContent.classList.add("slide-out-up");
-    }, 140);
+    }, 50);
 
     modalContent.classList.remove("slide-out-up");
 
     setTimeout(() => {
         modalWindow.classList.remove("active");
-    }, 720);
+    }, 180);
+
+    // Open URL through JS method - Archived
+    // window.open('https://github.com/beingsie/anything', '_blank', 'noopener');
 }
