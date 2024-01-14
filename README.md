@@ -1,9 +1,12 @@
 # Codedexio
 Documenting my progress as I navigate through the courses on [codédex.io](https://codedex.io).
 
-## Introducing Monthly Challenge Projects
-🦖 🥚 Starting off 2024 with a coding challenge from [Codêdex.io](https://codedex.io)
-### #30NitesOfCode Project: [Live →](https://30-nites-of-code.vercel.app/)
+### → Introducing Monthly Challenge Projects
+- Starting off 2024 with a coding challenge from [Codêdex.io](https://codedex.io)
+
+## 🚀 Latest #30NitesOfCode Projects:
+- [→ Anything](https://anything-30-noc.vercel.app/)
+- [→ #30NitesOfCode](https://30-nites-of-code.vercel.app/)
 
 ## ䷢ Current progress
 - [ ] [#30NitesOfCode](https://github.com/beingsie/codedexio/tree/main/monthly_challenges/2024/30_nites_of_code_activity)
