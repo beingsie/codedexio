@@ -18,3 +18,23 @@ Characters **must include** the following types:
 
 - **League of Legends**
     - Nunu: `Tank` *(Character duo)*
+
+# Character Board
+Here are some early explorations of characters.
+- `Attack`, `Health` & `Health Regen Percentage` will be based on a overall `max-health` of **500** for the entirety of the game.
+
+## Char_1
+Type: DPS
+- Health: **250**.
+- Attack: **25**.
+
+## Char_2
+Type: Tank
+- Health: **420**.
+- Attack: **15**.
+
+## Char_3
+Type: Support (`Self Health Regeneration` based on `critical` damage.)
+- Health: **150**.
+- Attack: **20**.
+- Health Regen: **15%** `max`.
