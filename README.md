@@ -9,7 +9,7 @@ Documenting my progress as I navigate through the courses on [codédex.io](https
 - [→ #30NitesOfCode](https://30-nites-of-code.vercel.app/)
 
 ## ䷢ Current progress
-- [ ] [#30NitesOfCode](https://github.com/beingsie/codedexio/tree/main/monthly_challenges/2024/30_nites_of_code_activity)
+- [x] [#30NitesOfCode](https://github.com/beingsie/codedexio/tree/main/monthly_challenges/2024/30_nites_of_code_activity)
 
 ### 🐍 The Legend of Python
 - Completion: **54%**
