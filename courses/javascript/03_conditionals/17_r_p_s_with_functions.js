@@ -66,6 +66,34 @@ function winner() {
   // Run game outcome
   runGameOutcome();
 
+  function choiceValueToString() {
+
+    // For players choice
+    if (playerChoice === rock) {
+      // If user plays rock
+      playerChoice = 'Rock';
+    } else if (playerChoice === scissors) {
+      // If user plays scissors
+      playerChoice = 'Scissors';
+    } else {
+      // If user plays paper
+      playerChoice = 'Paper';
+    }
+    // For bots choice
+    if (botChoice === rock) {
+      // If bot plays rock
+      botChoice = 'Rock';
+    } else if (botChoice === scissors) {
+      // If bot plays scissors
+      botChoice = 'Scissors';
+    } else {
+      // If bot plays paper
+      botChoice = 'Paper';
+    }
+  }
+  // Run choice value to string conversion
+  choiceValueToString()
+
   function choiceMessage() {
     // console.log("Ran choiceMessage() successfully"); //DEBUG
 
