@@ -12,7 +12,7 @@ let paper = 1;
 let scissors = 2;
 
 function draw() {
-  console.log("Ran draw() successfully"); //DEBUG
+  // console.log("Ran draw() successfully"); //DEBUG
 
   // Draw message
   function consoleMessageDraw() {
@@ -29,14 +29,14 @@ function draw() {
 }
 
 function winner() {
-  console.log("Ran winner() successfully"); //DEBUG
+  // console.log("Ran winner() successfully"); //DEBUG
 
   // Initialization for winning player/hand
   let winningPlayer;
   let winningHand;
 
   function choiceMessage() {
-    console.log("Ran choiceMessage() successfully"); //DEBUG
+    // console.log("Ran choiceMessage() successfully"); //DEBUG
 
     // Display each player's choice
     console.log(playerName, "picked:", playerChoice);
@@ -72,7 +72,7 @@ function winner() {
 
   // Winning message
   function winningHandMessage() {
-    console.log("winningHandMessage() successfully"); //DEBUG
+    // console.log("winningHandMessage() successfully"); //DEBUG
 
     // Winning hand messages
     let rockVsScissors = "Rock crushes Scissors!";
@@ -90,7 +90,7 @@ function winner() {
   }
 
   function displayWinner() {
-    console.log("displayWinner() successfully"); //DEBUG
+    // console.log("displayWinner() successfully"); //DEBUG
 
     // Display winning player
     console.log("The", winningPlayer, "won!");
