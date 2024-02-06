@@ -35,14 +35,6 @@ function winner() {
   let winningPlayer;
   let winningHand;
 
-  function choiceMessage() {
-    // console.log("Ran choiceMessage() successfully"); //DEBUG
-
-    // Display each player's choice
-    console.log(playerName, "picked:", playerChoice);
-    console.log(botName, "picked:", botChoice);
-  }
-
   // Determine winning hand & winning player
   if (playerChoice === rock) {
     // If user plays rock
@@ -68,6 +60,14 @@ function winner() {
     // If bot plays paper
     winningHand = paper;
     winningPlayer = botName;
+  }
+
+  function choiceMessage() {
+    // console.log("Ran choiceMessage() successfully"); //DEBUG
+
+    // Display each player's choice
+    console.log(playerName, "picked:", playerChoice);
+    console.log(botName, "picked:", botChoice);
   }
 
   // Winning message
