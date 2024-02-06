@@ -35,32 +35,36 @@ function winner() {
   let winningPlayer;
   let winningHand;
 
-  // Determine winning hand & winning player
-  if (playerChoice === rock) {
-    // If user plays rock
-    winningHand = rock;
-    winningPlayer = playerName;
-  } else if (botChoice === rock) {
-    // If bot plays rock
-    winningHand = rock;
-    winningPlayer = botName;
-  } else if (playerChoice === scissors) {
-    // If user plays scissors
-    winningHand = scissors;
-    winningPlayer = playerName;
-  } else if (botChoice === scissors) {
-    // If bot plays scissors
-    winningHand = scissors;
-    winningPlayer = botName;
-  } else if (playerChoice === paper) {
-    // If user plays paper
-    winningHand = paper;
-    winningPlayer = playerName;
-  } else if (botChoice === paper) {
-    // If bot plays paper
-    winningHand = paper;
-    winningPlayer = botName;
+  function runGameOutcome() {
+    // Determine winning hand & winning player
+    if (playerChoice === rock) {
+      // If user plays rock
+      winningHand = rock;
+      winningPlayer = playerName;
+    } else if (botChoice === rock) {
+      // If bot plays rock
+      winningHand = rock;
+      winningPlayer = botName;
+    } else if (playerChoice === scissors) {
+      // If user plays scissors
+      winningHand = scissors;
+      winningPlayer = playerName;
+    } else if (botChoice === scissors) {
+      // If bot plays scissors
+      winningHand = scissors;
+      winningPlayer = botName;
+    } else if (playerChoice === paper) {
+      // If user plays paper
+      winningHand = paper;
+      winningPlayer = playerName;
+    } else if (botChoice === paper) {
+      // If bot plays paper
+      winningHand = paper;
+      winningPlayer = botName;
+    }
   }
+  // Run game outcome
+  runGameOutcome();
 
   function choiceMessage() {
     // console.log("Ran choiceMessage() successfully"); //DEBUG
