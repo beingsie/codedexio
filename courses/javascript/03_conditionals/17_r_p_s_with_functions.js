@@ -2,8 +2,8 @@
 let playerChoice = 2;
 let playerName = "Player";
 
-// Generate a random number between 0-3 for the bot's choice
-let botChoice = Math.floor(Math.random() * 3 + 1);
+// Generate a random number between 0-2 for the bot's choice
+let botChoice = Math.floor(Math.random() * 3);
 let botName = "Bot";
 
 // Rock, Paper or Scissors
