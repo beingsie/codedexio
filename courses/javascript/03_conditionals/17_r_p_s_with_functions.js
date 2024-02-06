@@ -51,7 +51,7 @@ function winner() {
   } else if (botChoice === rock) {
     // If bot plays rock
     winningHand = rock;
-    winningPlayer = botNameName;
+    winningPlayer = botName;
   } else if (playerChoice === scissors) {
     // If user plays scissors
     winningHand = scissors;
@@ -67,7 +67,7 @@ function winner() {
   } else if (botChoice === paper) {
     // If bot plays paper
     winningHand = paper;
-    winningPlayer = botNameName;
+    winningPlayer = botName;
   }
 
   // Winning message
