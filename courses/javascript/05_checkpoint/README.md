@@ -17,7 +17,7 @@ This script generates a horoscope based on a randomly generated birth month.
 2. Navigate to the project directory:
 
    ```
-   cd codedexio
+   cd codedexio/courses/javascript/05_checkpoint
    ```
 
 3. Install dependencies:
