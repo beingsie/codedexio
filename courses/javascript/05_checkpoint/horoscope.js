@@ -1,3 +1,6 @@
+// Require chalk
+import chalk from "chalk";
+
 // User birth month
 let userBirthMonth = Math.floor(Math.random() * 10);
 
