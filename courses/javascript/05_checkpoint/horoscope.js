@@ -67,11 +67,7 @@ while (true) {
     console.log(defaultMessage, chalk.redBright("Scorpio"), scorpioSymbol);
     break;
   } else {
-    console.log(
-      defaultMessage,
-      chalk.magentaBright("Sagittarius"),
-      sagittariousSymbol
-    );
+    console.log(defaultMessage, chalk.magentaBright("Sagittarius"), sagittariousSymbol);
     break;
   }
 }
