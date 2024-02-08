@@ -4,12 +4,20 @@ Documenting my progress as I navigate through the courses on [codédex.io](https
 ### → Introducing Monthly Challenge Projects
 - Starting off 2024 with a coding challenge from [Codêdex.io](https://codedex.io)
 
-## 🚀 Latest #30NitesOfCode Projects:
+## 🚀 Past Events
+`#30NitesOfCode` Projects:
 - [→ Anything](https://anything-30-noc.vercel.app/)
 - [→ #30NitesOfCode](https://30-nites-of-code.vercel.app/)
 
-## ䷢ Current progress
-- [x] [#30NitesOfCode](https://github.com/beingsie/codedexio/tree/main/monthly_challenges/2024/30_nites_of_code_activity)
+## 📚 Current Lesson
+
+### ☕️ The Origins III: JavaScript
+- Completion: **44%**
+- Status: **Paused**
+- Final project: *Pending*
+- [Go to Course →](https://www.codedex.io/javascript/)
+
+## ⏸️ Paused progress
 
 ### 🐍 The Legend of Python
 - Completion: **54%**
@@ -28,9 +36,3 @@ Documenting my progress as I navigate through the courses on [codédex.io](https
 - Status: **Paused**
 - Final project: *Pending*
 - [Go to Course →](https://www.codedex.io/css/)
-
-### ☕️ The Origins III: JavaScript
-- Completion: **54%**
-- Status: **Paused**
-- Final project: *Pending*
-- [Go to Course →](https://www.codedex.io/javascript/)
