@@ -1,8 +1,8 @@
 // Require chalk
 import chalk from "chalk";
 
-// User birth month
-let userBirthMonth = Math.floor(Math.random() * 10);
+// User birth month (0-12)
+let userBirthMonth = Math.floor(Math.random() * 13);
 
 // Horoscopes & their month number
 let capricorn = 0;
