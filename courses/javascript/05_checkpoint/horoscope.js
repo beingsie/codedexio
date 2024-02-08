@@ -5,10 +5,11 @@ import chalk from "chalk";
 let userBirthMonth = Math.floor(Math.random() * 10);
 
 // Horoscopes & their month number
-let capricorn = 1;
-let aquarius = 2;
-let pisces = 3;
-let aries = 4;
+let capricorn = 0;
+let aquarius = 1;
+let pisces = 2;
+let aries = 3;
+let taurus = 4;
 let gemini = 5;
 let cancer = 6;
 let leo = 7;
@@ -22,6 +23,7 @@ let capricornSymbol = "♑️";
 let aquariusSymbol = "♒️";
 let piscesSymbol = "♓️";
 let ariesSymbol = "♈️";
+let taurusSymbol = "♉";
 let geminiSymbol = "♊️";
 let cancerSymbol = "♋️";
 let leoSymbol = "♌️";
@@ -36,17 +38,20 @@ while (true) {
   // Default message
   let defaultMessage = "You're horoscope is";
   // Match user birth month to its respective horoscope
-  if (userBirthMonth === 1) {
+  if (userBirthMonth === 0) {
     console.log(defaultMessage, chalk.cyanBright("Capricorn"), capricornSymbol);
     break;
-  } else if (userBirthMonth === 2) {
+  } else if (userBirthMonth === 1) {
     console.log(defaultMessage, chalk.blue("Aquarius"), aquariusSymbol);
     break;
-  } else if (userBirthMonth === 3) {
+  } else if (userBirthMonth === 2) {
     console.log(defaultMessage, chalk.cyan("Pisces"), piscesSymbol);
     break;
-  } else if (userBirthMonth === 4) {
+  } else if (userBirthMonth === 3) {
     console.log(defaultMessage, chalk.green("Aries"), ariesSymbol);
+    break;
+  } else if (userBirthMonth === 4) {
+    console.log(defaultMessage, chalk.magenta("Taurus"), taurusSymbol);
     break;
   } else if (userBirthMonth === 5) {
     console.log(defaultMessage, chalk.yellow("Gemini"), geminiSymbol);
