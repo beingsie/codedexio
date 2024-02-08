@@ -11,7 +11,7 @@ const characters = [
   "Woof"
 ];
 // Check if characters array contains waldo value
-if ((characters).includes(waldo)) {
+if (characters).includes(waldo) {
   // Assign the index of waldo in characters array to a variable
   let waldoIndex = characters.indexOf(waldo);
   //  Print found message
