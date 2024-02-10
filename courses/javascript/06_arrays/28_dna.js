@@ -3,11 +3,11 @@ let dnaPieces = ["A", "C", "G", "T"];
 // Initialize empty DNA array to store generated pattern
 let myDNA = [];
 // Loop 24 times
-for (z = 0; z < 24; z++) {
+for (let z = 0; z < 24; z++) {
   // Initialize to contain randomized string pattern
   let dnaString = "";
   // Loop 3 times to create a 3 letter string pattern
-  for (i = 0; i < 3; i++) {
+  for (let i = 0; i < 3; i++) {
     // Generate a random interger 0-3
     randomIndex = Math.floor(Math.random() * 4);
     // Assign generated string from pieces
