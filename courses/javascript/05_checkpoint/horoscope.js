@@ -54,52 +54,88 @@ while (true) {
   let defaultMessage = "You're horoscope is";
   // Match user birth month to its respective horoscope
   if (userBirthMonth === 0) {
+    console.log("");
     console.log(defaultMessage, chalk.cyanBright("Capricorn"), capricornSymbol);
+    console.log("");
     console.log(chalk.dim(capricornPersonality));
+    console.log("");
     break;
   } else if (userBirthMonth === 1) {
+    console.log("");
     console.log(defaultMessage, chalk.blue("Aquarius"), aquariusSymbol);
+    console.log("");
     console.log(chalk.dim(aquariusPersonality));
+    console.log("");
     break;
   } else if (userBirthMonth === 2) {
+    console.log("");
     console.log(defaultMessage, chalk.cyan("Pisces"), piscesSymbol);
+    console.log("");
     console.log(chalk.dim(piscesPersonality));
+    console.log("");
     break;
   } else if (userBirthMonth === 3) {
+    console.log("");
     console.log(defaultMessage, chalk.green("Aries"), ariesSymbol);
+    console.log("");
     console.log(chalk.dim(ariesPersonality));
+    console.log("");
     break;
   } else if (userBirthMonth === 4) {
+    console.log("");
     console.log(defaultMessage, chalk.green("Taurus"), taurusSymbol);
+    console.log("");
     console.log(chalk.dim(taurusPersonality));
+    console.log("");
     break;
   } else if (userBirthMonth === 5) {
+    console.log("");
     console.log(defaultMessage, chalk.yellow("Gemini"), geminiSymbol);
+    console.log("");
     console.log(chalk.dim(geminiPersonality));
+    console.log("");
     break;
   } else if (userBirthMonth === 6) {
+    console.log("");
     console.log(defaultMessage, chalk.red("Cancer"), cancerSymbol);
+    console.log("");
     console.log(chalk.dim(cancerPersonality));
+    console.log("");
     break;
   } else if (userBirthMonth === 7) {
+    console.log("");
     console.log(defaultMessage, chalk.blueBright("Leo"), leoSymbol);
+    console.log("");
     console.log(chalk.dim(leoPersonality));
+    console.log("");
     break;
   } else if (userBirthMonth === 8) {
+    console.log("");
     console.log(defaultMessage, chalk.greenBright("Virgo"), virgoSymbol);
+    console.log("");
     console.log(chalk.dim(virgoPersonality));
+    console.log("");
     break;
   } else if (userBirthMonth === 9) {
+    console.log("");
     console.log(defaultMessage, chalk.yellowBright("Libra"), libraSymbol);
+    console.log("");
     console.log(chalk.dim(libraPersonality));
+    console.log("");
     break;
   } else if (userBirthMonth === 10) {
+    console.log("");
     console.log(defaultMessage, chalk.redBright("Scorpio"), scorpioSymbol);
+    console.log("");
     console.log(chalk.dim(scorpioPersonality));
+    console.log("");
     break;
   } else {
+    console.log("");
     console.log(defaultMessage, chalk.magentaBright("Sagittarius"), sagittariousSymbol);
+    console.log("");
     console.log(chalk.dim(sagittariousPersonality));
+    console.log("");
     break;
   }
 }
