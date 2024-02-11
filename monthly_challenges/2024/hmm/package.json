@@ -1,5 +1,18 @@
 {
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "watch:sass": "sass --watch src/scss/style.scss dist/css/style.css",
+    "start": "webpack serve --open"
+  },
   "devDependencies": {
-    "tailwindcss": "^3.4.1"
+    "autoprefixer": "^10.4.17",
+    "browser-sync": "^2.29.3",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "path-browserify": "^1.0.1",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }
