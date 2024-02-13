@@ -28,6 +28,28 @@ function mcfcLineup() {
     "Mahamadou Susoho",
     "Sergio Gómez",
   ]
+  // Number of players for a full team
+  const requiredPlayers = 11;
+  // Initialize selectedLineup array
+  const selectedLineup = [];
 
-  // Iterate through array
+  for (i = 1; i < requiredPlayers + 1; i++) {
+    // Generated a random number
+    const randomNumber = Math.floor(Math.random() * requiredPlayers) + 1;
+    // Initialize random selected player
+    let mcfcPlayer;
+    // Iterate through mcfcPlayers array
+    for (x = 0; x < mcfcPlayers.length + 1; x++) {
+      mcfcPlayer = mcfcPlayers[x];
+    }
+    // Check for duplicates
+    if (randomNumber == mcfcPlayer)
+    // Add players to selected lineup using the random number as the index
+    selectedLineup.push(mcfcPlayers[randomNumber]);
+  }
+
+  // Print updated selectedLineup array
+  console.log(selectedLineup);
 }
+
+mcfcLineup();
