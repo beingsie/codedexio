@@ -12,7 +12,7 @@ Documenting my progress as I navigate through the courses on [codédex.io](https
 ## 📚 Current Lesson
 
 ### ☕️ The Origins III: JavaScript
-- Completion: **61%**
+- Completion: **72%**
 - Status: **Active**
 - Checkpoint: [Horoscope](https://github.com/beingsie/codedexio/blob/main/courses/javascript/05_checkpoint/horoscope.js)
 - Final project: *Pending*
@@ -21,7 +21,7 @@ Documenting my progress as I navigate through the courses on [codédex.io](https
 ## ⏸️ Paused progress
 
 ### 🐍 The Legend of Python
-- Completion: **54%**
+- Completion: **55%**
 - Status: **Paused**
 - Final project: *Pending*
 - [Go to Course →](https://www.codedex.io/python/)
