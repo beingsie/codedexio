@@ -1,17 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Basic Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.333s ease-in-out;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  overflow: hidden;
+  background: url("https://img.freepik.com/free-vector/abstract-maze-design-pattern-background-black-white_1048-15662.jpg") repeat;
+  background-blend-mode: screen;
+  backdrop-filter: invert(0%);
+  
+}
+
+h1 {
+  font-size: 20px;
+  font-family: "Press Start 2P", system-ui;
+}
+
+h2 {
+  font-size: 16px;
+}
+
 #wrapper {
-  border: 2px solid black;
-  border-radius: 5px;
-  width: 50%;
-  margin: 25vh auto;
-  padding: 10px;
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 24px;
+  padding: 16px;
   text-align: center;
-  transition: background-color 0.5s ease-in-out;
+  position: relative;
+  z-index: 1;
 }
 
 #quote-div {
-  border: 1px solid black;
-  border-radius: 5px;
-  width: 75%;
-  margin: 10px auto;
-  background-color: #fff;
+  border-radius: 12px;
+}
+
+#quote-text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+button {
+  font-family: sans-serif;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+button:active {
+  opacity: 1;
+}
+
+button p {
+  font-size: 14px;
+  font-weight: 600;
+  user-select: none;
+}
+
+.wrapp {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 0;
+}
+
+.img-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meditator {
+  display: block;
+  width: 100%;
+  max-width: 222px;
+  position: relative;
+  z-index: 1;
+}
+
+.sunburst {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.75;
+  filter: invert(1);
+  mix-blend-mode: screen;
+  margin-bottom: 174px;
+}
+
+/* Animation */
+.floating {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+ 
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }    
+}
+
+.spin {
+  animation-name: spin;
+  animation-duration: 30s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1024px){
+  .wrapp {
+    flex-direction: column-reverse;
+  }
+  .sunburst {
+    width: 300px;
+  }
+  .meditator {
+    max-width: 200px;
+  }
 }
