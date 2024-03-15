@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Press Start 2P", system-ui;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.mood-ring {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  border: 8px solid;
+  border-color: #ccc;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.stone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 125px;
+  background-color: #3498db; /* Default color */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Animation */
+.spin {
+  animation-name: spin;
+  animation-duration: 1.75s;
+  animation-delay: 0s;
+  animation-iteration-count: forward;
+}
+
+@keyframes spin {
+  0% {
+    border-color: #ccc;
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  50% {
+    border-color: #000;
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+  100% {
+    border-color: #ccc;
+    transform: rotate3d(0, 1, 0, 720deg);
+  }
+}
