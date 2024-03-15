@@ -1,19 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
+  font-family: "Press Start 2P", system-ui;
   background-color: #d7ba19;
 }
 
 #wrapper {
-  width: 75%;
-  margin: auto;
-}
-
-div {
-  width: 75%;
-  margin: auto;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 h1 {
-  display: inline;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin: 0 auto;
   position: relative;
   bottom: 4em;
+  /* Make it look cute */
+  padding: 8px 20px;
+  border-radius: 12px;
+  background-color: black;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  line-height: 3rem;
+}
+
+/* Coin spin */
+.spin {
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
 }
