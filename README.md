@@ -27,8 +27,8 @@ Documenting my progress as I navigate through the courses on [codédex.io](https
 - [Go to Course →](https://www.codedex.io/python/)
 
 ### 🗒️ The Origins I: HTML
-- Completion: **99%**
-- Status: **Paused**
+- Completion: **100%**
+- Status: **Awaiting Certificate**
 - Final project: [Live →](https://codedexio.vercel.app)
 - [Go to Course →](https://www.codedex.io/html/)
 
