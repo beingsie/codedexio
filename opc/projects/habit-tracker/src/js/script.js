@@ -92,9 +92,10 @@ function resetProgress() {
 		streakTracker.innerText = streak;
 		highestStreakTracker.innerText = 0;
 
-		griddy.classList.add("tilt-it");
+		griddy.classList.add("wobble-hor-bottom");
+		
 		setTimeout(() => {
-			griddy.classList.remove("tilt-it");
+			griddy.classList.remove("wobble-hor-bottom");
 		}, 300);
 
 		checkBoxes.forEach((checkbox) => {
@@ -110,4 +111,3 @@ function resetProgress() {
 }
 
 resetProgress();
-
