@@ -23,7 +23,9 @@ for (let i = 0; i < 30; i++) {
 const checkBoxes = document.querySelectorAll(".check-box");
 const cbo = document.querySelectorAll(".check-box-overlay");
 let streakTracker = document.getElementById("streakTracker");
+const highestStreakTracker = document.getElementById("highestStreakTracker");
 let streak = 0;
+let highestStreak = 0;
 let tracker = 0;
 let lastClickedNumber = 0;
 let streakStartElement = null;
@@ -67,6 +69,11 @@ checkBoxes.forEach((checkbox, index) => {
 			streakElements = [cboOverlay];
 		}
 
+		if (streak > highestStreak) {
+			highestStreak = streak;
+			highestStreakTracker.innerText = highestStreak;
+		}
+
 		streakTracker.innerText = streak;
 		console.log(`Streak: ${streak}`); // Debug log
 	});
@@ -78,10 +85,12 @@ function resetProgress() {
 	resetBtn.addEventListener("click", () => {
 		tracker = 0;
 		streak = 0;
+		highestStreak = 0;
 		lastClickedNumber = 0;
 		streakStartElement = null;
 		streakElements = [];
 		streakTracker.innerText = streak;
+		highestStreakTracker.innerText = 0;
 
 		griddy.classList.add("tilt-it");
 		setTimeout(() => {
